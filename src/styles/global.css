@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	html,
+	body {
+		@apply text-gray-800;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-inconsolata;
+	}
+
+	pre {
+		@apply rounded-md font-inconsolata p-3 my-2 text-sm;
+	}
+
+	p > code {
+		@apply py-1 px-2 bg-slate-100 shadow-sm dark:shadow-none text-sm;
+	}
+
+	blockquote {
+		@apply relative italic before:w-2 before:h-full before:absolute before:bg-emerald-500;
+	}
+
+	blockquote > p {
+		@apply pl-6;
+	}
+}
+
+@layer components {
+	.post h2 {
+		@apply flex flex-col text-3xl my-2 after:w-16 after:h-2 after:bg-emerald-400 after:mt-2 mb-6;
+	}
+
+	.post h3 {
+		@apply flex flex-col text-2xl my-2 after:w-10 after:h-1 after:bg-emerald-400 mb-4;
+	}
+
+	.post h4 {
+		@apply flex flex-col text-xl my-2 mb-1;
+	}
+
+	.post h5 {
+		@apply text-base;
+	}
+
+	.post ul {
+		@apply list-inside list-disc ml-4;
+	}
+
+	.post ol {
+		@apply list-decimal list-inside ml-4;
+	}
+
+	.post a {
+		@apply hover:text-emerald-500 underline font-semibold tracking-widest;
+	}
+
+	.post p {
+		@apply my-2;
+	}
+}

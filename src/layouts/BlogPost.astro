@@ -1,25 +1,54 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import BlogHeader from '../components/BlogHeader.astro';
-import BlogPost from '../components/BlogPost.astro';
-
+import Layout from './Layout.astro'
 
 const { content } = Astro.props;
-const { title, description, publishDate, author, heroImage, permalink, alt } = content;
+const { title, subTitle, description, publishedOn, author, imageSrc, permalink, alt } = content;
 ---
 
-<html lang={content.lang || 'en'}>
-	<head>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prism-themes@1.9.0/themes/prism-lucario.css"/>
-		<BaseHead {title} {description} {permalink} />
-	</head>
-
-	<body>
-		<BlogHeader />
-		<div class="wrapper">
-			<BlogPost {title} {author} {heroImage} {publishDate} {alt}>
-				<slot />
-			</BlogPost>
+<Layout content={{title, description, permalink}}>
+	<div class="max-w-4xl m-auto">
+		<h1 class="md:text-5xl text-3xl py-6">{title}
+			<div class="w-16 h-2 mt-4 bg-emerald-400"></div>
+		</h1>
+		<h2 class="md:text-2xl text-xl mb-4 opacity-60">{subTitle}</h2>
+		<img src={imageSrc} width={1600} height={840} alt={title} class="rounded-md mb-1" />
+		<span class="italic">Published {publishedOn}</span>
+		<div class="flex flex-col my-6 pb-6 text-lg tracking-wider post">
+			<slot />
 		</div>
-	</body>
-</html>
+		<section class="border-2 rounded-lg border-emerald-400 px-4 py-2 bg-emerald-400/10">
+			<div class="max-w-md m-auto">
+				<h4 class="text-center text-2xl font-semibold text-gray-800">
+					There's more where that came from!
+				</h4>
+				<h5 class="text-center mt-2 mb-6 text-xl leading-5 font-open-sans text-gray-800">
+					Sign up for Brock&apos;s Bytes - my weekly newsletter - to get
+					notified when a new article is published! You will also get
+					newsletter-exclusive tips and advice on software development!
+				</h5>
+				<form id="revue-form" name="revue-form"
+					action="https://www.getrevue.co/profile/brockherion/add_subscriber" method="post" target="_blank"
+					class="flex flex-col md:items-center md:justify-center md:px-12">
+					<input class="w-full px-4 py-2 rounded-md mb-2 border" id="member_email" name="member[email]"
+						type="email" placeholder="me@example.com" required />
+					<button class="w-full bg-yellow-300 px-4 py-2 rounded-md text-slate-800 font-bold mb-2"
+						type="submit">
+						Subscribe
+					</button>
+					<div class="w-full text-sm text-center italic text-gray-800">
+						By subscribing, you agree with Revue’s{" "}
+						<a target="_blank" href="https://www.getrevue.co/terms" class="text-gray-800 hover:underline">
+							Terms of Service
+						</a>{" "}
+						and{" "}
+						<a target="_blank" href="https://www.getrevue.co/privacy" class="text-gray-800 hover:underline">
+							Privacy Policy
+						</a>
+						.
+					</div>
+				</form>
+			</div>
+		</section>
+	</div>
+
+</Layout>
