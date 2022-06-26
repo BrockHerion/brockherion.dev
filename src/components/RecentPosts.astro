@@ -10,7 +10,8 @@ const recentPosts = allPosts
 <ul class="list-disc list-inside max-w-4xl md:px-12 px-4 space-y-2 m-auto mb-12">
 	{recentPosts.map(post => (
 	<li>
-		<a class="text-emerald-500 hover:underline" href={`/blog/posts/${post.frontmatter.slug}`}>
+		<a class="text-emerald-800 font-semibold tracking-wide hover:underline"
+			href={`/blog/posts/${post.frontmatter.slug}`}>
 			{post.frontmatter.title}:
 		</a> {post.frontmatter.abstract}
 	</li>

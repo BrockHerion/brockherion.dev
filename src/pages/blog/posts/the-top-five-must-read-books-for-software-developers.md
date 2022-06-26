@@ -26,25 +26,9 @@ In the _You Don't Know JS Yet series_, Kyle Simpson provides a fantastic look at
 
 I can't recommend _You Don't Know JS Yet enough_. It provided me with a much deeper and richer understanding of how JavaScript works. Check _You Don't Know JS Yet_ out at the Amazon link below!
 
-<!-- <AffiliateLink
-  imageSrc="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B084DFZ6GW&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=brockherion-20&language=en_US"
-  ircSrc="https://ir-na.amazon-adsystem.com/e/ir?t=brockherion-20&language=en_US&l=li2&o=1&a=B084DFZ6GW"
->
-  <div className="flex flex-col justify-between h-full">
-    <div>
-      <h4 className="font-bold tracking-widest">You Don't Know JS Yet</h4>
-      <h5 className="ml-2">by Kyle Simpson</h5>
-    </div>
-    <div className="text-sm flex items-center space-x-4 mb-4">
-      <a href="https://amzn.to/3C5v1ud" target="_blank">
-        Physical Copy
-      </a>
-      <a href="https://amzn.to/3C5v1ud" target="_blank">
-        Audiobook
-      </a>
-    </div>
-  </div>
-</AffiliateLink> -->
+<div style="margin-bottom:18px;margin-top:18px;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;margin:auto" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brockherion-20&language=en_US&marketplace=amazon&region=US&placement=B084DFZ6GW&asins=B084DFZ6GW&linkId=75214e63bb826403913e4544f3f856da&show_border=true&link_opens_in_new_window=true"></iframe>
+</div>
 
 ## The Unicorn Project - Gene Kim
 
@@ -53,26 +37,10 @@ This book, along with its sister book The _Phoenix Project_, was one of the firs
 There is a lot to unpack in this book. From internal processes to cloud computing, to DevOps, and even to functional programming, there is a lot going on here. It can be a bit overwhelming at times.
 
 With that being said, this book offers a lot of great insights into building better software, faster. I still try and apply a lot of the principles from it in my full-time job and my freelancing projects. I recommend reading this along with _The Phoenix Project_, which focuses more on the IT side of the house. You can find _The Unicorn Project_ at Amazon with the link below.
-<!-- 
-<AffiliateLink
-  imageSrc="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1942788762&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=brockherion-20&language=en_US"
-  ircSrc="https://ir-na.amazon-adsystem.com/e/ir?t=brockherion-20&language=en_US&l=li2&o=1&a=1942788762"
->
-  <div className="flex flex-col justify-between h-full">
-    <div>
-      <h4 className="font-bold tracking-widest">The Unicorn Project</h4>
-      <h5 className="ml-2">by Gene Kim</h5>
-    </div>
-    <div className="text-sm flex items-center space-x-4 mb-4">
-      <a href="https://amzn.to/3vyuKhX" target="_blank">
-        Physical Copy
-      </a>
-      <a href="https://amzn.to/3vOj0s3" target="_blank">
-        Audiobook
-      </a>
-    </div>
-  </div>
-</AffiliateLink> -->
+
+<div style="margin-bottom:18px;margin-top:18px;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;margin:auto" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brockherion-20&language=en_US&marketplace=amazon&region=US&placement=1942788762&asins=1942788762&linkId=8b1a24a5ceb0abd24283424d52c1ff3d&show_border=true&link_opens_in_new_window=true"></iframe>
+</div>
 
 ## Algorithms to Live By - Brain Christian and Tom Griffiths
 
@@ -80,26 +48,9 @@ _Algorithms to Live By_ is not directly related to software development but inst
 
 I adored _Algorithms to Live By_ the first time I listened to it. It's a fantastic look into human psychology and how we can apply solutions that were found for computer problems to our everyday thinking. This is a fantastic book not just for software developers, but for anybody with an interest in human decision-making. The Amazon links for _Algorithms to Live By_ can be found below.
 
-<!-- <AffiliateLink
-  imageSrc="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=1250118360&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=brockherion-20&language=en_US"
-  ircSrc="https://ir-na.amazon-adsystem.com/e/ir?t=brockherion-20&language=en_US&l=li2&o=1&a=1250118360"
->
-  <div className="flex flex-col justify-between h-full">
-	<div>
-	  <h4>Algorithms to Live By</h4>
-	  <h5>by Brain Christian and Tom Griffiths</h5>
-    </div>
-    <div className="text-sm flex items-center space-x-4 mb-4">
-      <a href="https://amzn.to/3vyuKhX" target="_blank">
-        Physical Copy
-      </a>
-      <a href="https://amzn.to/3vOj0s3" target="_blank">
-        Audiobook
-      </a>
-    </div>
-
-  </div>
-</AffiliateLink> -->
+<div style="margin-bottom:18px;margin-top:18px;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;margin:auto" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brockherion-20&language=en_US&marketplace=amazon&region=US&placement=1250118360&asins=1250118360&linkId=226b50dcf420f9630f08603133d55698&show_border=true&link_opens_in_new_window=true"></iframe>
+</div>
 
 ## The Pragmatic Programmer - David Thomas and Andrew Hunt
 
@@ -107,26 +58,9 @@ _The Pragmatic Programmer_ is a book I would consider a classic for software dev
 
 I read through _The Pragmatic Programmer_ one day laying on the beach, but also picked up the audio version of the book. I would recommend picking up the audio version, as the authors get to add and interject a little bit more of their thoughts into it. It's incredibly well done and feels more like a podcast than a book. It keeps you engaged the entire time you're listening. Pick up the audio, or physical copy, of _The Pragmatic Programmer_ at the links below.
 
-<!-- <AffiliateLink
-  imageSrc="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0135957052&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=brockherion-20&language=en_US"
-  ircSrc="https://ir-na.amazon-adsystem.com/e/ir?t=brockherion-20&language=en_US&l=li2&o=1&a=0135957052"
->
-  <div className="flex flex-col justify-between h-full">
-	<div>
-	  <h4>The Pragmatic Programmer</h4>
-	  <h5>by David Thomas and Andrew Hunt</h5>
-    </div>
-    <div className="text-sm flex items-center space-x-4 mb-4">
-      <a href="https://amzn.to/3szpkl2" target="_blank">
-        Physical Copy
-      </a>
-      <a href="https://amzn.to/3vuWvIp" target="_blank">
-        Audiobook
-      </a>
-    </div>
-
-  </div>
-</AffiliateLink> -->
+<div style="margin-bottom:18px;margin-top:18px;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;margin:auto" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brockherion-20&language=en_US&marketplace=amazon&region=US&placement=0135957052&asins=0135957052&linkId=c3c370755233618112cd5b603413d828&show_border=true&link_opens_in_new_window=true"></iframe>
+</div>
 
 ## Clean Code - Robert C. Martin
 
@@ -134,25 +68,9 @@ _Clean Code_ is another classic among developers. While _The Pragmatic Programme
 
 Fair warning, _Clean Code_ tends to be a little bit on the drier side. The information in it is great but the book itself does tend to drag, in my opinion. I recommend picking up the audio version but be cautioned that it comes with a caveat. While it doesn't contain any of the author's additional commentary, the audio version of _Clean Code_ is still really well done. The downside to this is that you do lose the ability to actually see the code presented in the example problems. I personally own both versions so it isn't a huge deal, but it is something to keep in mind. Both versions can be found on Amazon at the links below.
 
-<!-- <AffiliateLink
-  imageSrc="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=0132350882&Format=_SL160_&ID=AsinImage&MarketPlace=US&ServiceVersion=20070822&WS=1&tag=brockherion-20&language=en_US"
-  ircSrc="https://ir-na.amazon-adsystem.com/e/ir?t=brockherion-20&language=en_US&l=li2&o=1&a=0132350882"
->
-  <div className="flex flex-col justify-between h-full">
-    <div>
-      <h4>Clean Code</h4>
-      <h5>by Robert C. Martin</h5>
-    </div>
-    <div className="text-sm flex items-center space-x-4 mb-4">
-      <a href="https://amzn.to/3McaFEd" target="_blank">
-        Physical Copy
-      </a>
-      <a href="https://amzn.to/3hwqlnJ" target="_blank">
-        Audiobook
-      </a>
-    </div>
-  </div>
-</AffiliateLink> -->
+<div style="margin-bottom:18px;margin-top:18px;">
+<iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style="width:120px;height:240px;margin:auto" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=brockherion-20&language=en_US&marketplace=amazon&region=US&placement=0132350882&asins=0132350882&linkId=5d7fa032d310fe56cbb1be75b58cd625&show_border=true&link_opens_in_new_window=true"></iframe>
+</div>
 
 ## Conclusion
 

@@ -11,11 +11,9 @@ let permalink = 'https://brockherion.dev/';
 ---
 
 <Layout content={{title, description, permalink}}>
-	<div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col justify-items-stretch mb-8">
-		<div class="md:mb-0 mb-6">
-			<img src={code} alt="Picture of Brock" width="890" height="858" />
-		</div>
-		<div class="height-full flex flex-col md:items-end justify-center">
+	<div class="flex flex-col md:flex-row mb-8">
+		<img class="mb-6 w-full h-full" src={code} alt="Picture of Brock" width="890" height="858" />
+		<div class="flex flex-col md:items-end justify-center">
 			<div class=" flex flex-col md:items-end">
 				<h1 class="text-4xl ">Hey there 👋</h1>
 				<div class="w-16 h-2 mt-4 bg-emerald-400"></div>
