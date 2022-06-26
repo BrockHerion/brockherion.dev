@@ -15,7 +15,8 @@ const popularPosts = allPosts
 				<div
 					class="bg-emerald-400/10 shadow dark:shadow-none rounded-md overflow-hidden h-80 border border-emerald-400 px-2">
 					<h5 class="text-xl mt-3 mb-6 px-2">{post.frontmatter.title}</h5>
-					<img src={post.frontmatter.imageSrc} height="168" width="320" class="rounded" />
+					<img src={post.frontmatter.imageSrc} height="168" width="320" class="rounded"
+						alt={post.frontmatter.title} />
 					<h6 class="text-lg italic text-right px-2">{post.frontmatter.publishedOn}</h6>
 				</div>
 			</a>

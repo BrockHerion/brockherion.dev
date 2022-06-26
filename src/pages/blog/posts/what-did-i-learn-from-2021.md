@@ -9,7 +9,7 @@ abstract: A look back on my journey through 2021 and a reflection on what I lear
 isPublished: true
 isFeatured: false
 publishedOn: "January 4, 2022"
-imageSrc: /posts/a-look-back-on-2021.png
+imageSrc: /posts/a-look-back-on-2021.webp
 ---
 
 I've been doing a lot of thinking about the previous year. 2021 was an interesting year, to say the least, and it's taken me some time to digest all that's happened during it. Sometimes, it's hard to even comprehend that things happened within the same year.
