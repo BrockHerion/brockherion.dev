@@ -4,12 +4,12 @@ setup: |
 title: Building Reusable Components in React with Typescript and Generics
 subTitle: How to use Typescript generics to build more reusable, more robust React components.
 slug: building-reusable-components-in-react-with-typescript-and-generics
-seoTitle: Building Reusable Components in React with Typescript and Generics
-abstract: In this article, I will be showing you how you can use Typescript generics to build reusable and more robust components for your React applications
+description: In this article, I will be showing you how you can use Typescript generics to build reusable and more robust components for your React applications
 isPublished: true
 isFeatured: false
 publishedOn: "Febuary 6, 2022"
-imageSrc: /posts/react-ts-generics-min.webp
+image: /posts/react-ts-generics-min.webp
+permalink: 'https://brockherion.dev/blog/posts/building-reusable-components-in-react-with-typescript-and-generics'
 ---
 
 I'll be honest with you all, I'm kind of a neat freak about my code. I like having things be as simple as they possibly can be. I enjoy writing code once that I can use repeatedly. Out of all the SOLID principles, the one I try and follow most closely is the Single-Responsibility Principle, where each class, module, and method is responsible for one thing and one thing only. It really helps keep everything organized and optimizes for code longevity.

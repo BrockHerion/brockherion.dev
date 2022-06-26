@@ -3,17 +3,17 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 
 const { content } = Astro.props
-const { title, description, publishDate, author, heroImage, permalink, alt } = content;
+const { title, description, permalink, image } = content;
 
 ---
 
 <html lang={ content.lang || 'en' }>
 
 	<head>
-		<BaseHead {title} {description} {permalink} />
+		<BaseHead {title} {description} {permalink} {image} />
 	</head>
 
-	<body class="bg-orange-50/20">
+	<body class="bg-gray-800">
 		<Header />
 		<main class="2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 py-6">
 			<slot />

@@ -4,12 +4,12 @@ setup: |
 title: Stop building REST APIs for your Next.js apps, use tRPC instead
 subTitle: tRPC is a tool that lets you build scalable back-ends quickly, as well as provide type safety between your front and back-ends.
 slug: stop-building-rest-apis-for-your-next-apps
-seoTitle: Stop building REST APIs for your Next.js apps, use tRPC instead
-abstract: As you build your Next.js, there's a good chance that you'll need an API, and the best way to build one is with tRPC.
+description: As you build your Next.js, there's a good chance that you'll need an API, and the best way to build one is with tRPC.
 isPublished: true
 isFeatured: true
 publishedOn: "April 4, 2022"
-imageSrc: /posts/stop-building-rest-apis-for-your-next-apps.webp
+image: /posts/stop-building-rest-apis-for-your-next-apps.webp
+permalink: 'https://brockherion.dev/blog/posts/stop-building-rest-apis-for-your-next-apps'
 ---
 
 When I first started developing full-stack applications, I was building and managing my own REST APIs. I began with building them in Java with Spring, then moved over to .NET, then to Node with Express, and even dabbled in a little bit of Django. To say that managing two different projects in different languages (sometimes) is cumbersome would be putting it lightly.

@@ -4,12 +4,12 @@ setup: |
 title: The Top 5 Must-Read Books for Software Developers
 subTitle: There are a lot of great books about software development, but these books are some that every developer should read!
 slug: the-top-five-must-read-books-for-software-developers
-seoTitle: The Top 5 Must-Read Books for Software Developers
-abstract: There are a lot of great books about software development, but these books are some that every developer should read!
+description: There are a lot of great books about software development, but these books are some that every developer should read!
 isPublished: true
 isFeatured: false
 publishedOn: "March 2, 2022"
-imageSrc: /posts/the-top-five-must-read-books-for-software-developers.webp
+image: /posts/the-top-five-must-read-books-for-software-developers.webp
+permalink: 'https://brockherion.dev/blog/posts/the-top-five-must-read-books-for-software-developers'
 ---
 
 There's a very good chance that if I'm not programming, I'm reading. I love reading and have been a book nerd since I was a kid. Today I find myself reading a lot more technological books to help me in my career as a software developer.

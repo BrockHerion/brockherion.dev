@@ -2,14 +2,14 @@
 setup: |
   import Layout from '../../../layouts/BlogPost.astro'
 title: Using higher-order functions to build per-page layouts in Next.js
-subTitle: Higher-order functions allow us to create an abstraction over how we set up our page layouts.
+subTitle: Higher-order functions allow us to create an descriptionion over how we set up our page layouts.
 slug: using-higher-order-functions-to-build-per-page-layouts-in-nextjs
-seoTitle: Using higher-order functions to build per-page layouts in NextJS
-abstract: This article will show you how to create per-page layouts in Next.js using a higher-order function.
+description: This article will show you how to create per-page layouts in Next.js using a higher-order function.
 isPublished: true
 isFeatured: true
 publishedOn: "May 12, 2022"
-imageSrc: /posts/using-higher-order-functions-to-build-per-page-layouts-in-nextjs.webp
+image: /posts/using-higher-order-functions-to-build-per-page-layouts-in-nextjs.webp
+permalink: 'https://brockherion.dev/blog/posts/using-higher-order-functions-to-build-per-page-layouts-in-nextjs'
 ---
 
 This article is a follow-up to a previous one I wrote about setting up per-page layouts in Next.JS with tRPC and NextAuth. You don’t have to read the original before reading this, but it has more background and setup code snippets. You can find it [here](https://www.brockherion.dev/blog/posts/creating-per-page-layouts-with-nextjs-typescript-trcp-and-nextauth).

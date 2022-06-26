@@ -4,12 +4,12 @@ setup: |
 title: Things about software development I wish somebody had told me
 subTitle: Looking back on my journey, there are a few things I wish I had known about being a developer when I started out.
 slug: things-about-software-development
-seoTitle: Things about software development I wish somebody had told me
-abstract: Looking back on my journey, there are a few things I wish I had known about being a developer when I started out.
+description: Looking back on my journey, there are a few things I wish I had known about being a developer when I started out.
 isPublished: true
 isFeatured: true
 publishedOn: "May 2, 2022"
-imageSrc: /posts/things-about-software-development.webp
+image: /posts/things-about-software-development.webp
+permalink: 'https://brockherion.dev/blog/posts/things-about-software-development'
 ---
 
 Not long ago, I had a phone call with my brother. The reason for the call was that he wanted my opinion on him changing his major. The call was not about the act of changing majors, but specifically about him changing into software engineering. He wanted to know if this field would provide him with the opportunities he was looking for. I told him about my experience of going to school, doing freelance, and working a full-time job.

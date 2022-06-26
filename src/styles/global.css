@@ -5,7 +5,7 @@
 @layer base {
 	html,
 	body {
-		@apply text-gray-800;
+		@apply text-slate-100;
 	}
 
 	h1,
