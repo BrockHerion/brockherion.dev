@@ -8,7 +8,7 @@ seoTitle: Using higher-order functions to build per-page layouts in NextJS
 abstract: This article will show you how to create per-page layouts in Next.js using a higher-order function.
 isPublished: true
 isFeatured: true
-publishedOn: "05/12/2022"
+publishedOn: "May 12, 2022"
 imageSrc: /posts/using-higher-order-functions-to-build-per-page-layouts-in-nextjs.png
 ---
 

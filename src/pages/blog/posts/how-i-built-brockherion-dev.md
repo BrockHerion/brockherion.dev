@@ -8,7 +8,7 @@ seoTitle: How I built brockherion.dev
 abstract: Join me as I share how I built brockherion.dev! We'll look at where it started, where it is now, and plans for the future.
 isPublished: true
 isFeatured: false
-publishedOn: "04/26/2022"
+publishedOn: "April 26, 2022"
 imageSrc: /posts/how-i-built-brockherion-dev.png
 ---
 

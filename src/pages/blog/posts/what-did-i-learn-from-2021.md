@@ -8,7 +8,7 @@ seoTitle: What did I learn from 2021?
 abstract: A look back on my journey through 2021 and a reflection on what I learned from it all.
 isPublished: true
 isFeatured: false
-publishedOn: "01/04/2022"
+publishedOn: "January 4, 2022"
 imageSrc: /posts/a-look-back-on-2021.png
 ---
 

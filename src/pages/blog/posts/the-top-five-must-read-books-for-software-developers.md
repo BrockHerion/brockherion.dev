@@ -8,7 +8,7 @@ seoTitle: The Top 5 Must-Read Books for Software Developers
 abstract: There are a lot of great books about software development, but these books are some that every developer should read!
 isPublished: true
 isFeatured: false
-publishedOn: "03/02/2022"
+publishedOn: "March 2, 2022"
 imageSrc: /posts/the-top-five-must-read-books-for-software-developers.png
 ---
 

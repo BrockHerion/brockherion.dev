@@ -8,7 +8,7 @@ seoTitle: Designing and Building REST APIs for Other Humans
 abstract: In this guide, you will learn how to create a REST API that will keep you and other developers happy.
 isPublished: true
 isFeatured: false
-publishedOn: "10/04/2021"
+publishedOn: "October 14, 2021"
 imageSrc: /posts/designing-building-rest-apis-for-other-humans.png
 ---
 
