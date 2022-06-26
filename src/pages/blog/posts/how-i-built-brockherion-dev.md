@@ -12,8 +12,6 @@ publishedOn: "April 26, 2022"
 imageSrc: /posts/how-i-built-brockherion-dev.png
 ---
 
-<BlogBody>
-
 brockherion.dev is finally at a place where I'm happy with it. While there are still bugs to fix and features I want to add, I'm genuinely pleased with how far it's come in the past year. It had been through the ring a few times with different stacks, and to be quite honest, I sometimes thought this would never get done. But it was all those failed iterations and ideas that made this site what it is today.
 
 In this article, we're through my journey of building brockherion.dev. We'll look at some of the tech I tried, why I picked the stack that I did, the features and ideas that made it, and much more.
@@ -73,5 +71,3 @@ brockherion.dev has seen a few iterations in its existence, but it's now in a go
 I hope your visit here was a pleasant experience. I'm always happy to accept feedback and suggestions on things. You can always reach out to me on Twitter [@brockherion](https://twitter.com/brockherion) or email me at [brock@brockherion.dev](mailto:brock@brockherion.dev). If you want to view the source code, you can find it on [GitHub](https://github.com/BrockHerion/brockherion.com)
 
 Thank you much for reading and I'll see you in the next one. Happy Coding!
-
-</BlogBody>
