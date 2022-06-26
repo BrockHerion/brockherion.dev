@@ -1,5 +1,4 @@
 ---
-// Component Imports
 import FeaturedPosts from '../components/FeaturedPosts.astro';
 import RecentPosts from '../components/RecentPosts.astro';
 import Layout from '../layouts/Layout.astro';
@@ -8,9 +7,10 @@ import code from '/code.webp'
 let title = 'Home - Brock Herion';
 let description = 'I\'m Brock. I\'m a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer';
 let permalink = 'https://brockherion.dev/';
+let image = '/default-social.webp';
 ---
 
-<Layout content={{title, description, permalink}}>
+<Layout content={{title, description, permalink, image}}>
 	<div class="flex flex-col md:flex-row mb-8">
 		<img class="mb-6 w-full h-full" src={code} alt="Picture of Brock" width="890" height="858" />
 		<div class="flex flex-col md:items-end justify-center">
@@ -35,13 +35,13 @@ let permalink = 'https://brockherion.dev/';
 			</h3>
 		</div>
 	</div>
-	<div class="text-gray-800 border-2 rounded-lg border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-8">
+	<div class="border-2 rounded-lg border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-8">
 		<h3 class="text-2xl mb-2">
 			Subscribe to my newsletter 💌
 		</h3>
-		<div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col">
+		<div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col pb-2">
 			<div>
-				<p class="text-lg mb-3 text-gray-800 font-inconsolata">
+				<p class="text-lg mb-3 font-inconsolata">
 					Stay up-to-date on new content with Brock&apos;s Bytes! I also share tips
 					related to full-stack software development and give advice on
 					managing a healthy, productive life while having a career in
@@ -49,7 +49,7 @@ let permalink = 'https://brockherion.dev/';
 				</p>
 			</div>
 			<div>
-				<h4 class="text-xl mb-3 md:text-center text-gray-800">
+				<h4 class="text-xl mb-3 md:text-center">
 					Sign up now to join a growing community of friendly readers!
 				</h4>
 				<form id="revue-form" name="revue-form"
@@ -61,13 +61,13 @@ let permalink = 'https://brockherion.dev/';
 						type="submit">
 						Subscribe
 					</button>
-					<div class="w-full text-sm text-center italic text-gray-800">
+					<div class="w-full text-sm text-center italic">
 						By subscribing, you agree with Revue’s{" "}
-						<a target="_blank" href="https://www.getrevue.co/terms" class="text-gray-800 hover:underline">
+						<a target="_blank" href="https://www.getrevue.co/terms" class="hover:underline">
 							Terms of Service
 						</a>{" "}
 						and{" "}
-						<a target="_blank" href="https://www.getrevue.co/privacy" class="text-gray-800 hover:underline">
+						<a target="_blank" href="https://www.getrevue.co/privacy" class="hover:underline">
 							Privacy Policy
 						</a>
 						.

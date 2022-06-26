@@ -5,8 +5,9 @@ export interface Props {
 	title: string;
 	description: string;
 	permalink: string;
+	image?: string;
 }
-const { title, description, permalink } = Astro.props;
+const { title, description, permalink, image } = Astro.props as Props;
 ---
 
 <!-- Global Metadata -->
@@ -24,14 +25,14 @@ const { title, description, permalink } = Astro.props;
 <meta property="og:url" content={permalink} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content="https://astro.build/social.png?v=1" />
+<meta property="og:image" content={image} />
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={permalink} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
-<meta property="twitter:image" content="https://astro.build/social.png?v=1" />
+<meta property="twitter:image" content={image} />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" />

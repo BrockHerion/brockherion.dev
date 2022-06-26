@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 let title = 'Blog - Brock Herion';
 let description = 'On my blog, you can browse articles on software development, productivity, books, and my life as a developer.';
 let permalink = 'https://brockherion.dev/';
+let image = '/default-social.webp';
 
 let allPosts = await Astro.glob('./posts/*.md');
 allPosts = allPosts.filter(post => post.frontmatter.isPublished)
@@ -11,7 +12,7 @@ allPosts = allPosts.filter(post => post.frontmatter.isPublished)
 
 ---
 
-<Layout content={{title, description, permalink}}>
+<Layout content={{title, description, permalink, image}}>
 	<h1 class="text-5xl pt-6">
 		Blog 📰
 		<div class="w-16 h-2 mt-4 bg-emerald-400"></div>
@@ -26,12 +27,12 @@ allPosts = allPosts.filter(post => post.frontmatter.isPublished)
 				<h4 class="text-2xl track leading-6 font-semibold mb-2 h-24">
 					{post.frontmatter.title}
 				</h4>
-				<img src={post.frontmatter.imageSrc} height="168" width="320" class="rounded" />
+				<img src={post.frontmatter.image} height="168" width="320" class="rounded" />
 				<div class="h-24 overflow-hidden mt-2">
 					<span class="text-sm italic">
 						{post.frontmatter.publishedOn}
 					</span>
-					<p class="leading-5 mt-4 line-clamp-3">{post.frontmatter.abstract}</p>
+					<p class="leading-5 mt-4 line-clamp-3">{post.frontmatter.description}</p>
 				</div>
 			</div>
 		</a>

@@ -4,12 +4,12 @@ setup: |
 title: Creating Per-Page Layouts with Next.JS, Typescript, tRCP, and NextAuth
 subTitle: tRPC and NextAuth are two powerful libraries that, combined with per-page layouts, let you create fast and powerful NextJS Apps.
 slug: creating-per-page-layouts-with-nextjs-typescript-trcp-and-nextauth
-seoTitle: Creating Per-Page Layouts with Next.JS, Typescript, tRCP, and NextAuth
-abstract: In this article, I will be showing you how you can use NextJS Per-Page layouts with Typescript, NextAuth, and tRPC to build shared layouts.
+description: In this article, I will be showing you how you can use NextJS Per-Page layouts with Typescript, NextAuth, and tRPC to build shared layouts.
 isPublished: true
 isFeatured: true
 publishedOn: "January 7, 2022"
-imageSrc: /posts/trpc-next-per-page.webp
+image: /posts/trpc-next-per-page.webp
+permalink: 'https://brockherion.dev/blog/posts/creating-per-page-layouts-with-nextjs-typescript-trcp-and-nextauth'
 ---
 
 I've been working on an application that has quite a few changing layouts. There's an overall layout that is shared between all pages and each page has its own sub-layout that changes depending on what kind of content you are viewing. This will only grow in complexity as more pages are added.

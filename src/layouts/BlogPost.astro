@@ -2,26 +2,26 @@
 import Layout from './Layout.astro'
 
 const { content } = Astro.props;
-const { title, subTitle, description, publishedOn, author, imageSrc, permalink, alt } = content;
+const { title, subTitle, description, publishedOn, author, image, permalink, alt } = content;
 ---
 
-<Layout content={{title, description, permalink}}>
+<Layout content={{title, description, permalink, image}}>
 	<div class="max-w-4xl m-auto">
 		<h1 class="md:text-5xl text-3xl py-6">{title}
 			<div class="w-16 h-2 mt-4 bg-emerald-400"></div>
 		</h1>
 		<h2 class="md:text-2xl text-xl mb-4 opacity-60">{subTitle}</h2>
-		<img src={imageSrc} width={1600} height={840} alt={title} class="rounded-md mb-1" />
+		<img src={image} width={1600} height={840} alt={title} class="rounded-md mb-1" />
 		<span class="italic">Published {publishedOn}</span>
 		<div class="flex flex-col my-6 pb-6 text-lg tracking-wider post">
 			<slot />
 		</div>
 		<section class="border-2 rounded-lg border-emerald-400 px-4 py-2 bg-emerald-400/10">
 			<div class="max-w-md m-auto">
-				<h4 class="text-center text-2xl font-semibold text-gray-800">
+				<h4 class="text-center text-2xl font-semibold">
 					There's more where that came from!
 				</h4>
-				<h5 class="text-center mt-2 mb-6 text-xl leading-5 font-open-sans text-gray-800">
+				<h5 class="text-center mt-2 mb-6 text-xl leading-5 font-open-sans">
 					Sign up for Brock&apos;s Bytes - my weekly newsletter - to get
 					notified when a new article is published! You will also get
 					newsletter-exclusive tips and advice on software development!
@@ -35,13 +35,13 @@ const { title, subTitle, description, publishedOn, author, imageSrc, permalink, 
 						type="submit">
 						Subscribe
 					</button>
-					<div class="w-full text-sm text-center italic text-gray-800">
+					<div class="w-full text-sm text-center italic">
 						By subscribing, you agree with Revue’s{" "}
-						<a target="_blank" href="https://www.getrevue.co/terms" class="text-gray-800 hover:underline">
+						<a target="_blank" href="https://www.getrevue.co/terms" class="hover:underline">
 							Terms of Service
 						</a>{" "}
 						and{" "}
-						<a target="_blank" href="https://www.getrevue.co/privacy" class="text-gray-800 hover:underline">
+						<a target="_blank" href="https://www.getrevue.co/privacy" class="hover:underline">
 							Privacy Policy
 						</a>
 						.
