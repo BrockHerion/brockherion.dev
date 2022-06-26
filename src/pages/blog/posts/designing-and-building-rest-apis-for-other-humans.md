@@ -9,7 +9,7 @@ abstract: In this guide, you will learn how to create a REST API that will keep 
 isPublished: true
 isFeatured: false
 publishedOn: "October 14, 2021"
-imageSrc: /posts/designing-building-rest-apis-for-other-humans.png
+imageSrc: /posts/designing-building-rest-apis-for-other-humans.webp
 ---
 
 As developers, we interact with APIs all the time. And chances are, if you're a web developer, you've interacted with a REST API at some point or another. But what if you need to create one? How do you go about doing that?

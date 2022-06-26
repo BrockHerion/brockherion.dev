@@ -9,7 +9,7 @@ abstract: Looking back on my journey, there are a few things I wish I had known 
 isPublished: true
 isFeatured: true
 publishedOn: "May 2, 2022"
-imageSrc: /posts/things-about-software-development.png
+imageSrc: /posts/things-about-software-development.webp
 ---
 
 Not long ago, I had a phone call with my brother. The reason for the call was that he wanted my opinion on him changing his major. The call was not about the act of changing majors, but specifically about him changing into software engineering. He wanted to know if this field would provide him with the opportunities he was looking for. I told him about my experience of going to school, doing freelance, and working a full-time job.

@@ -9,7 +9,7 @@ abstract: This article will show you how to create per-page layouts in Next.js u
 isPublished: true
 isFeatured: true
 publishedOn: "May 12, 2022"
-imageSrc: /posts/using-higher-order-functions-to-build-per-page-layouts-in-nextjs.png
+imageSrc: /posts/using-higher-order-functions-to-build-per-page-layouts-in-nextjs.webp
 ---
 
 This article is a follow-up to a previous one I wrote about setting up per-page layouts in Next.JS with tRPC and NextAuth. You don’t have to read the original before reading this, but it has more background and setup code snippets. You can find it [here](https://www.brockherion.dev/blog/posts/creating-per-page-layouts-with-nextjs-typescript-trcp-and-nextauth).

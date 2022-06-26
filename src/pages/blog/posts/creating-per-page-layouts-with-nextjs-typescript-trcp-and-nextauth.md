@@ -9,7 +9,7 @@ abstract: In this article, I will be showing you how you can use NextJS Per-Page
 isPublished: true
 isFeatured: true
 publishedOn: "January 7, 2022"
-imageSrc: /posts/trpc-next-per-page.png
+imageSrc: /posts/trpc-next-per-page.webp
 ---
 
 I've been working on an application that has quite a few changing layouts. There's an overall layout that is shared between all pages and each page has its own sub-layout that changes depending on what kind of content you are viewing. This will only grow in complexity as more pages are added.

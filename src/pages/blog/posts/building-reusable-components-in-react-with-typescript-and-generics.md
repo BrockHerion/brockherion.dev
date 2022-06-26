@@ -9,7 +9,7 @@ abstract: In this article, I will be showing you how you can use Typescript gene
 isPublished: true
 isFeatured: false
 publishedOn: "Febuary 6, 2022"
-imageSrc: /posts/react-ts-generics-min.png
+imageSrc: /posts/react-ts-generics-min.webp
 ---
 
 I'll be honest with you all, I'm kind of a neat freak about my code. I like having things be as simple as they possibly can be. I enjoy writing code once that I can use repeatedly. Out of all the SOLID principles, the one I try and follow most closely is the Single-Responsibility Principle, where each class, module, and method is responsible for one thing and one thing only. It really helps keep everything organized and optimizes for code longevity.

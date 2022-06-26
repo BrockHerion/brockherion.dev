@@ -9,7 +9,7 @@ abstract: Join me as I share how I built brockherion.dev! We'll look at where it
 isPublished: true
 isFeatured: false
 publishedOn: "April 26, 2022"
-imageSrc: /posts/how-i-built-brockherion-dev.png
+imageSrc: /posts/how-i-built-brockherion-dev.webp
 ---
 
 brockherion.dev is finally at a place where I'm happy with it. While there are still bugs to fix and features I want to add, I'm genuinely pleased with how far it's come in the past year. It had been through the ring a few times with different stacks, and to be quite honest, I sometimes thought this would never get done. But it was all those failed iterations and ideas that made this site what it is today.

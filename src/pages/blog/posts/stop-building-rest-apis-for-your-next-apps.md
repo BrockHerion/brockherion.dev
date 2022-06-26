@@ -9,7 +9,7 @@ abstract: As you build your Next.js, there's a good chance that you'll need an A
 isPublished: true
 isFeatured: true
 publishedOn: "April 4, 2022"
-imageSrc: /posts/stop-building-rest-apis-for-your-next-apps.png
+imageSrc: /posts/stop-building-rest-apis-for-your-next-apps.webp
 ---
 
 When I first started developing full-stack applications, I was building and managing my own REST APIs. I began with building them in Java with Spring, then moved over to .NET, then to Node with Express, and even dabbled in a little bit of Django. To say that managing two different projects in different languages (sometimes) is cumbersome would be putting it lightly.

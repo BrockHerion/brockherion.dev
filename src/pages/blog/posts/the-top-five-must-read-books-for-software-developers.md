@@ -9,7 +9,7 @@ abstract: There are a lot of great books about software development, but these b
 isPublished: true
 isFeatured: false
 publishedOn: "March 2, 2022"
-imageSrc: /posts/the-top-five-must-read-books-for-software-developers.png
+imageSrc: /posts/the-top-five-must-read-books-for-software-developers.webp
 ---
 
 There's a very good chance that if I'm not programming, I'm reading. I love reading and have been a book nerd since I was a kid. Today I find myself reading a lot more technological books to help me in my career as a software developer.

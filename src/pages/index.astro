@@ -3,7 +3,7 @@
 import FeaturedPosts from '../components/FeaturedPosts.astro';
 import RecentPosts from '../components/RecentPosts.astro';
 import Layout from '../layouts/Layout.astro';
-import codeSvg from '/code.svg';
+import code from '/code.webp'
 
 let title = 'Home - Brock Herion';
 let description = 'I\'m Brock. I\'m a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer';
@@ -13,7 +13,7 @@ let permalink = 'https://brockherion.dev/';
 <Layout content={{title, description, permalink}}>
 	<div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col justify-items-stretch mb-8">
 		<div class="md:mb-0 mb-6">
-			<img src={codeSvg} alt="" />
+			<img src={code} alt="Picture of Brock" width="445" height="429" />
 		</div>
 		<div class="height-full flex flex-col md:items-end justify-center">
 			<div class=" flex flex-col md:items-end">
