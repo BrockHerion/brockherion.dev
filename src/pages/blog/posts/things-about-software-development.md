@@ -8,7 +8,7 @@ seoTitle: Things about software development I wish somebody had told me
 abstract: Looking back on my journey, there are a few things I wish I had known about being a developer when I started out.
 isPublished: true
 isFeatured: true
-publishedOn: "05/25/2022"
+publishedOn: "May 2, 2022"
 imageSrc: /posts/things-about-software-development.png
 ---
 

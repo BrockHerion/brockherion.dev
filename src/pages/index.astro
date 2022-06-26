@@ -1,25 +1,17 @@
 ---
 // Component Imports
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import FeaturedPosts from '../components/FeaturedPosts.astro';
+import RecentPosts from '../components/RecentPosts.astro';
 import Layout from '../layouts/Layout.astro';
 import codeSvg from '/code.svg';
-
 
 let title = 'Home - Brock Herion';
 let description = 'I\'m Brock. I\'m a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer';
 let permalink = 'https://brockherion.dev/';
-
-// Data Fetching: List all Markdown posts in the repo.
-
-let allPosts = await Astro.glob('./blog/posts/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
 ---
 
 <Layout content={{title, description, permalink}}>
-	<div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col justify-items-stretch mb-12">
+	<div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col justify-items-stretch mb-8">
 		<div class="md:mb-0 mb-6">
 			<img src={codeSvg} alt="" />
 		</div>
@@ -45,7 +37,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 			</h3>
 		</div>
 	</div>
-	<div class="text-gray-800 border-2 rounded-lg border-emerald-400 px-4 py-2 bg-emerald-400/10">
+	<div class="text-gray-800 border-2 rounded-lg border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-8">
 		<h3 class="text-2xl mb-2">
 			Subscribe to my newsletter 💌
 		</h3>
@@ -85,5 +77,12 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 				</form>
 			</div>
 		</div>
+	</div>
+	<FeaturedPosts />
+	<RecentPosts />
+	<div class="flex justify-center">
+		<a href="/blog" class="bg-emerald-400 px-3 py-4 rounded-md text-gray-800">
+			Explore more posts
+		</a>
 	</div>
 </Layout>

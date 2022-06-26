@@ -1,0 +1,18 @@
+---
+const allPosts = await Astro.glob('../pages/blog/posts/*.md');
+const recentPosts = allPosts
+	.filter(post => post.frontmatter.isPublished)
+	.sort((a, b) => new Date(b.frontmatter.publishedOn).valueOf() - new Date(a.frontmatter.publishedOn).valueOf())
+	.slice(0, 10);
+---
+
+<h4 class="text-xl mb-3">Fresh off the press 🗞</h4>
+<ul class="list-disc list-inside max-w-4xl md:px-12 px-4 space-y-2 m-auto mb-12">
+	{recentPosts.map(post => (
+	<li>
+		<a class="text-emerald-500 hover:underline" href={`/blog/posts/${post.frontmatter.slug}`}>
+			{post.frontmatter.title}:
+		</a> {post.frontmatter.abstract}
+	</li>
+	))}
+</ul>
