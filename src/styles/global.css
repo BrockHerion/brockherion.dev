@@ -18,11 +18,11 @@
 	}
 
 	pre {
-		@apply rounded-md font-inconsolata p-3 my-2 text-sm;
+		@apply rounded font-inconsolata p-3 my-2 text-sm;
 	}
 
 	p > code {
-		@apply py-1 px-2 bg-slate-100 shadow-sm dark:shadow-none text-sm;
+		@apply py-1 px-2 bg-gray-700 shadow-sm dark:shadow-none text-sm rounded;
 	}
 
 	blockquote {

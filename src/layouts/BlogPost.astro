@@ -2,7 +2,7 @@
 import Layout from './Layout.astro'
 
 const { content } = Astro.props;
-const { title, subTitle, description, publishedOn, author, image, permalink, alt } = content;
+const { title, subTitle, description, publishedOn, image, permalink } = content;
 ---
 
 <Layout content={{title, description, permalink, image}}>
@@ -11,12 +11,12 @@ const { title, subTitle, description, publishedOn, author, image, permalink, alt
 			<div class="w-16 h-2 mt-4 bg-emerald-400"></div>
 		</h1>
 		<h2 class="md:text-2xl text-xl mb-4 opacity-60">{subTitle}</h2>
-		<img src={image} width={1600} height={840} alt={title} class="rounded-md mb-1" />
+		<img src={image} width={1600} height={840} alt={title} class="rounded mb-1" />
 		<span class="italic">Published {publishedOn}</span>
 		<div class="flex flex-col my-6 pb-6 text-lg tracking-wider post">
 			<slot />
 		</div>
-		<section class="border-2 rounded-lg border-emerald-400 px-4 py-2 bg-emerald-400/10">
+		<section class="border-2 rounded border-emerald-400 px-4 py-2 bg-emerald-400/10">
 			<div class="max-w-md m-auto">
 				<h4 class="text-center text-2xl font-semibold">
 					There's more where that came from!
@@ -29,10 +29,9 @@ const { title, subTitle, description, publishedOn, author, image, permalink, alt
 				<form id="revue-form" name="revue-form"
 					action="https://www.getrevue.co/profile/brockherion/add_subscriber" method="post" target="_blank"
 					class="flex flex-col md:items-center md:justify-center md:px-12">
-					<input class="w-full px-4 py-2 rounded-md mb-2 border" id="member_email" name="member[email]"
+					<input class="w-full px-4 py-2 rounded mb-2 border" id="member_email" name="member[email]"
 						type="email" placeholder="me@example.com" required />
-					<button class="w-full bg-yellow-300 px-4 py-2 rounded-md text-slate-800 font-bold mb-2"
-						type="submit">
+					<button class="w-full bg-yellow-300 px-4 py-2 rounded text-slate-800 font-bold mb-2" type="submit">
 						Subscribe
 					</button>
 					<div class="w-full text-sm text-center italic">

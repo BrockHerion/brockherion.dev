@@ -22,13 +22,13 @@ allPosts = allPosts.filter(post => post.frontmatter.isPublished)
 	<div class="grid md:grid-cols-3 gap-x-6 gap-y-6">
 		{allPosts.map(post => (
 		<a href={`/blog/posts/${post.frontmatter.slug}`}
-			class="bg-emerald-400/10 shadow dark:shadow-none rounded-md overflow-hidden h-96 border border-emerald-400 px-2">
+			class="bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden h-96 border border-emerald-400 px-2">
 			<div class="p-3 flex-1 flex flex-col justify-evenly">
 				<h4 class="text-2xl track leading-6 font-semibold mb-2 h-24">
 					{post.frontmatter.title}
 				</h4>
 				<img src={post.frontmatter.image} height="168" width="320" class="rounded" />
-				<div class="h-24 overflow-hidden mt-2">
+				<div class="h-42 overflow-hidden mt-2">
 					<span class="text-sm italic">
 						{post.frontmatter.publishedOn}
 					</span>
