@@ -7,7 +7,7 @@ slug: i-rebuilt-my-site-in-astro
 description: I spent a few hours rebuilding this Next.js site in Astro. Here's how my experience was with it and my thoughts on Astro as a whole.
 isPublished: true
 isFeatured: false
-publishedOn: "June 26, 2022"
+publishedOn: "June 28, 2022"
 image: /posts/i-rebuilt-my-site.webp
 permalink: 'https://brockherion.dev/blog/posts/i-rebuilt-my-site-in-astro'
 ---
