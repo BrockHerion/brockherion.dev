@@ -28,11 +28,12 @@ const { title, description, permalink, image } = Astro.props as Props;
 <meta property="og:image" content={image} />
 
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content={permalink} />
-<meta property="twitter:title" content={title} />
-<meta property="twitter:description" content={description} />
-<meta property="twitter:image" content={image} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@brockherion">
+<meta name="twitter:url" content={permalink} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" />
