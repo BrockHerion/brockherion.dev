@@ -13,11 +13,11 @@ const popularPosts = allPosts
 			{popularPosts.map((post) => (
 			<a href={`/blog/posts/${post.frontmatter.slug}`}>
 				<div
-					class="bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden h-80 border border-emerald-400 px-2">
-					<h5 class="text-xl mt-3 mb-6 px-2">{post.frontmatter.title}</h5>
-					<img src={post.frontmatter.image} height="168" width="320" class="rounded"
+					class="bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden h-96 border border-emerald-400 px-2">
+					<h5 class="text-xl mt-3 mb-6 px-2 h-20">{post.frontmatter.title}</h5>
+					<img src={post.frontmatter.image} height="168" width="320" class="rounded mb-4"
 						alt={post.frontmatter.title} />
-					<h6 class="text-lg italic text-right px-2">{post.frontmatter.publishedOn}</h6>
+					<p class="px-2 line-clamp-3 opacity-60">{post.frontmatter.description}</p>
 				</div>
 			</a>
 			))}
