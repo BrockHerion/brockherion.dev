@@ -1,5 +1,5 @@
 ---
-const allPosts = await Astro.glob('../pages/blog/posts/*.md');
+const allPosts = await Astro.glob('../pages/blog/posts/*.mdx');
 const popularPosts = allPosts
 	.filter(post => post.frontmatter.isFeatured && post.frontmatter.isPublished)
 	.sort((a, b) => new Date(b.frontmatter.publishedOn).valueOf() - new Date(a.frontmatter.publishedOn).valueOf())

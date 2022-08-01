@@ -6,7 +6,7 @@ let description = 'On my blog, you can browse articles on software development, 
 let permalink = 'https://brockherion.dev/';
 let image = '/default-social.webp';
 
-let allPosts = await Astro.glob('./posts/*.md');
+let allPosts = await Astro.glob('./posts/*.mdx');
 allPosts = allPosts.filter(post => post.frontmatter.isPublished)
 	.sort((a, b) => new Date(b.frontmatter.publishedOn).valueOf() - new Date(a.frontmatter.publishedOn).valueOf())
 

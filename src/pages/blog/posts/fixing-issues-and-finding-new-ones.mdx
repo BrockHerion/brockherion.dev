@@ -1,7 +1,6 @@
 ---
-setup: |
-  import Layout from '../../../layouts/BlogPost.astro'
-title: 'Fixing issues and finding new ones - Chirpmark Devlog #3'
+layout: "../../../layouts/BlogPost.astro"
+title: "Fixing issues and finding new ones - Chirpmark Devlog #3"
 subTitle: This week, I spent time fixing bugs that came up during initial user testing and cleaning up some areas of code.
 slug: fixing-issues-and-finding-new-ones
 description: This week, I spent time fixing bugs that came up during initial user testing and cleaning up some areas of code.
@@ -9,7 +8,7 @@ isPublished: true
 isFeatured: false
 publishedOn: "July 25, 2022"
 image: /posts/fixing-issues-and-finding-new-ones.webp
-permalink: 'https://brockherion.dev/blog/posts/fixing-issues-and-finding-new-ones'
+permalink: "https://brockherion.dev/blog/posts/fixing-issues-and-finding-new-ones"
 ---
 
 Hello everyone and welcome to another Chirpmark Devlog! This week I spent time working on implementing the feedback I received. A lot of the feedback for Chirpmark in its current state revolved around the ‘My bookmarks’ page, which is currently useless. All it does is display every bookmark you’ve imported and nothing else.
@@ -40,7 +39,7 @@ Instead of now just creating or fetching bookmarks, I need to create or fetch po
 
 I’m using Prisma as my ORM and it doesn’t support ‘fetch or create’ on a table. The alternative solution is to use their `upsert` command, which will then either create a new record or simply fetch an existing one. You can do this if you give it an empty object for the update parameter. This generates a `SELECT` query for every single item in my list. For my Twitter account, that’s roughly 80 selects generated every single time I want to import.
 
-With the latest changes to make it a collection, this gets worse. Before, I was just doing a `createMany`,  which will do exactly what the name implies. It’s very fast and works pretty well. Now however, I need to fetch the ‘all’ collection first so I can link the bookmarks to it. The problem is `createMany` does not let you connect objects. This means I’m falling back on `create` or `upsert` to make sure my entities are linked correctly, which means another insane number of queries generated.
+With the latest changes to make it a collection, this gets worse. Before, I was just doing a `createMany`, which will do exactly what the name implies. It’s very fast and works pretty well. Now however, I need to fetch the ‘all’ collection first so I can link the bookmarks to it. The problem is `createMany` does not let you connect objects. This means I’m falling back on `create` or `upsert` to make sure my entities are linked correctly, which means another insane number of queries generated.
 
 There are a couple of things I’m trying to do to optimize this. First, I’m filtering out any posts that don’t exist already to create them. Because I’m now fetching existing posts in bulk and then creating new ones, I’m reducing the number of queries that are created. For adding bookmarks to the collection, it's a bit harder to do because of the `createMany` limitation I mentioned earlier. The fix will be very similar to posts, where I’ll fetch existing bookmarks first in a single query, then create any new ones.
 
