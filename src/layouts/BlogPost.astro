@@ -61,7 +61,7 @@ const filteredPosts = allPosts
 				<a href={`/blog/posts/${post.frontmatter.slug}`}>
 					<div
 						class="h-80 bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden border border-emerald-400 px-2">
-						<h5 class="text-xl mt-3 mb-2 px-2">{post.frontmatter.title}</h5>
+						<h5 class="text-xl mt-3 mb-2 px-2 line-clamp-2">{post.frontmatter.title}</h5>
 						<img src={post.frontmatter.image} height="168" width="320" class="rounded mb-2"
 							alt={post.frontmatter.title} />
 						<p class="px-2 line-clamp-3 opacity-60">{post.frontmatter.description}</p>
