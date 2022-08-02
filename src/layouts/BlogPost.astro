@@ -4,7 +4,7 @@ import Layout from './Layout.astro'
 const { content } = Astro.props;
 const { title, subTitle, description, publishedOn, image, permalink, slug } = content;
 
-const allPosts = await Astro.glob('../pages/blog/posts/*.mdx');
+const allPosts = await Astro.glob('../pages/blog/posts/*.md');
 const filteredPosts = allPosts
 	.filter(post => post.frontmatter.slug !== slug && post.frontmatter.isPublished)
 	.sort((a, b) => new Date(b.frontmatter.publishedOn).valueOf() - new Date(a.frontmatter.publishedOn).valueOf())
