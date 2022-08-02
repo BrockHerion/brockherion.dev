@@ -7,8 +7,7 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [preact(), react(), tailwind(), mdx()],
-  server: {
-    tailwindConfig: './tailwind.config.cjs'
-  }
+  integrations: [preact(), react(), tailwind({    
+		config: { applyBaseStyles: false },
+	}), mdx()],
 });

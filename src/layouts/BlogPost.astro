@@ -19,9 +19,9 @@ const filteredPosts = allPosts
 		<h2 class="md:text-2xl text-xl mb-4 opacity-60">{subTitle}</h2>
 		<img src={image} width={1600} height={840} alt={title} class="rounded mb-1" />
 		<span class="italic">Published {publishedOn}</span>
-		<div class="flex flex-col my-6 text-lg tracking-wider post">
+		<article class="flex flex-col my-6 text-lg tracking-wider post">
 			<slot />
-		</div>
+		</article>
 		<section class="border-2 rounded border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-6">
 			<div class="max-w-md m-auto">
 				<h3 class="text-center text-2xl font-semibold">

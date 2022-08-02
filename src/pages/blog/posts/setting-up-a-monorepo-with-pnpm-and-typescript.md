@@ -8,7 +8,7 @@ isPublished: true
 isFeatured: true
 publishedOn: "August 1, 2022"
 image: /posts/setting-up-a-monorepo-with-pnpm-and-typescript.webp
-permalink: 'https://brockherion.dev/blog/posts/setting-up-a-monorepo-with-pnpm-and-typescript'
+permalink: "https://brockherion.dev/blog/posts/setting-up-a-monorepo-with-pnpm-and-typescript"
 ---
 
 Have you ever worked on a project where each app that was a part of it was in a different repository? It can be frustrating and time-consuming to deal with. Or maybe you have some code that you’d like to share between projects, but don’t want to deal with having to set up and manage an NPM package.
@@ -17,7 +17,7 @@ Enter the monorepo. Monorepos enable you to put all of your apps for a project i
 
 ## Setting up our monorepo workspace with pnpm
 
-pnpm is an alternative to npm and yarn. It has quite a few noticeable improvements over both of them, including faster package installation, a non-flat node_modules structure, disk space optimization, and, what we care about, built-in monorepo support. If you don’t have pnpm setup already on your system, head on over to [https://pnpm.io/installation]( https://pnpm.io/installation) for details on how to install it for your system.
+pnpm is an alternative to npm and yarn. It has quite a few noticeable improvements over both of them, including faster package installation, a non-flat node_modules structure, disk space optimization, and, what we care about, built-in monorepo support. If you don’t have pnpm setup already on your system, head on over to [https://pnpm.io/installation](https://pnpm.io/installation) for details on how to install it for your system.
 
 With pnpm installed, we can create a new Node project like so
 
@@ -38,19 +38,19 @@ Next, create a new file called pnpm-workspace.yaml. Here, we will configure all 
 ```yaml
 # pnpm-workspace.yaml
 packages:
-  - 'admin'
-  - 'client'
-  - 'shared'
+  - "admin"
+  - "client"
+  - "shared"
 ```
 
-What we’re doing here is telling pnpm that we’ll have three projects that it needs to keep track of.  For this example, we’ll be creating two React apps with Vite for our Admin and Client, and then having a shared project they both use code from.
+What we’re doing here is telling pnpm that we’ll have three projects that it needs to keep track of. For this example, we’ll be creating two React apps with Vite for our Admin and Client, and then having a shared project they both use code from.
 
 Before we create those however, we need to setup our base tsconfig.json file. Let’s go ahead and create two new files. The first one we’ll create is tsconfig.base.json. Add the following configuration options to it.
 
 ```json
 // tsconfig.base.json
 {
-"compilerOptions": {
+  "compilerOptions": {
     "strict": true,
     "strictNullChecks": true,
     "esModuleInterop": true,
@@ -73,7 +73,7 @@ Now we can create our actual tsconfig.json. To have it inherit from our base, we
 // tsconfig.json
 {
   "extends": "./tsconfig.base.json"
-} 
+}
 ```
 
 We are now ready to start adding our projects!
@@ -87,8 +87,8 @@ Add the following lines to your new package.json file.
 ```json
 // shared/package.json
 {
-	"name": "@monorepo/shared",
-	"private": true
+  "name": "@monorepo/shared",
+  "private": true
 }
 ```
 
@@ -99,14 +99,18 @@ Let’s add a new file here called index.ts. In this file, we will have an inter
 ```ts
 // shared/index.ts
 export interface User {
-	firstName: string;
-	lastName: string;
-	email: string;
-	isAdmin: boolean;
+  firstName: string;
+  lastName: string;
+  email: string;
+  isAdmin: boolean;
 }
 
 export function greetUser(user: User) {
-	alert(`Hello, ${user.firstName} ${user.lastName}! You are ${user.isAdmin ? 'an admin.' : 'not an admin.'}`);
+  alert(
+    `Hello, ${user.firstName} ${user.lastName}! You are ${
+      user.isAdmin ? "an admin." : "not an admin."
+    }`
+  );
 }
 ```
 
