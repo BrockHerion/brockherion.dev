@@ -1,75 +1,90 @@
 ---
-import Layout from './Layout.astro'
+import Layout from "./Layout.astro";
 
 const { content } = Astro.props;
-const { title, subTitle, description, publishedOn, image, permalink, slug } = content;
+const { title, subTitle, description, publishedOn, image, permalink, slug } =
+	content;
 
-const allPosts = await Astro.glob('../pages/blog/posts/*.md');
+const allPosts = await Astro.glob("../pages/blog/posts/*.md");
 const filteredPosts = allPosts
-	.filter(post => post.frontmatter.slug !== slug && post.frontmatter.isPublished)
-	.sort((a, b) => new Date(b.frontmatter.publishedOn).valueOf() - new Date(a.frontmatter.publishedOn).valueOf())
+	.filter(
+		(post) => post.frontmatter.slug !== slug && post.frontmatter.isPublished
+	)
+	.sort(
+		(a, b) =>
+			new Date(b.frontmatter.publishedOn).valueOf() -
+			new Date(a.frontmatter.publishedOn).valueOf()
+	)
 	.slice(0, 3);
 ---
 
-<Layout content={{title, description, permalink, image}}>
+<Layout content={{ title, description, permalink, image }}>
 	<div class="max-w-4xl m-auto">
-		<h1 class="md:text-5xl text-3xl py-6">{title}
+		<h1 class="md:text-5xl text-3xl py-6">
+			{title}
 			<div class="w-16 h-2 mt-4 bg-emerald-400"></div>
 		</h1>
 		<h2 class="md:text-2xl text-xl mb-4 opacity-60">{subTitle}</h2>
-		<img src={image} width={1600} height={840} alt={title} class="rounded mb-1" />
+		<img
+			src={image}
+			width={1600}
+			height={840}
+			alt={title}
+			class="rounded mb-1"
+		/>
 		<span class="italic">Published {publishedOn}</span>
 		<article class="flex flex-col my-6 text-lg tracking-wider post">
 			<slot />
 		</article>
-		<section class="border-2 rounded border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-6">
-			<div class="max-w-md m-auto">
+		<section
+			class="border-2 rounded border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-6"
+		>
+			<div class="max-w-sm m-auto">
 				<h3 class="text-center text-2xl font-semibold">
-					There's more where that came from!
+					There's more where that came from with Brock's Bytes!
 				</h3>
-				<p class="text-center mt-2 mb-6 text-xl leading-5 font-open-sans">
-					Sign up for Brock&apos;s Bytes - my weekly newsletter - to get
-					notified when a new article is published! You will also get
-					newsletter-exclusive tips and advice on software development!
+				<p
+					class="text-center mt-2 mb-6 text-xl leading-5 font-inconsolata"
+				>
+					Brock's Bytes is my weekly newsletter where I send an email
+					containing 8 of the best things that I found during the
+					week. You don't want to miss it!
 				</p>
-				<form id="revue-form" name="revue-form"
-					action="https://www.getrevue.co/profile/brockherion/add_subscriber" method="post" target="_blank"
-					class="flex flex-col md:items-center md:justify-center md:px-12">
-					<input class="w-full px-4 py-2 rounded mb-2 border" id="member_email" name="member[email]"
-						type="email" placeholder="me@example.com" required />
-					<button class="w-full bg-yellow-300 px-4 py-2 rounded text-slate-800 font-bold mb-2" type="submit">
-						Subscribe
-					</button>
-					<div class="w-full text-sm text-center italic">
-						By subscribing, you agree with Revue’s{" "}
-						<a target="_blank" href="https://www.getrevue.co/terms" class="hover:underline">
-							Terms of Service
-						</a>{" "}
-						and{" "}
-						<a target="_blank" href="https://www.getrevue.co/privacy" class="hover:underline">
-							Privacy Policy
-						</a>
-						.
-					</div>
-				</form>
+				<a
+					class="w-full bg-yellow-300 px-4 py-2 rounded text-slate-800 font-bold mb-2 text-center"
+					type="submit"
+					href="https://brocksbytes.com"
+					target="_blank"
+					rel="noreferrer"
+					>Get access
+				</a>
 			</div>
 		</section>
 		<section>
 			<h3 class="text-2xl mb-3">More Articles</h3>
 			<div class="grid md:grid-cols-3 gap-x-4 gap-y-4">
-				{filteredPosts.map((post) => (
-				<a href={`/blog/posts/${post.frontmatter.slug}`}>
-					<div
-						class="h-80 bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden border border-emerald-400 px-2">
-						<h5 class="text-xl mt-3 mb-2 px-2 line-clamp-2">{post.frontmatter.title}</h5>
-						<img src={post.frontmatter.image} height="168" width="320" class="rounded mb-2"
-							alt={post.frontmatter.title} />
-						<p class="px-2 line-clamp-3 opacity-60">{post.frontmatter.description}</p>
-					</div>
-				</a>
-				))}
+				{
+					filteredPosts.map((post) => (
+						<a href={`/blog/posts/${post.frontmatter.slug}`}>
+							<div class="h-80 bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden border border-emerald-400 px-2">
+								<h5 class="text-xl mt-3 mb-2 px-2 line-clamp-2">
+									{post.frontmatter.title}
+								</h5>
+								<img
+									src={post.frontmatter.image}
+									height="168"
+									width="320"
+									class="rounded mb-2"
+									alt={post.frontmatter.title}
+								/>
+								<p class="px-2 line-clamp-3 opacity-60">
+									{post.frontmatter.description}
+								</p>
+							</div>
+						</a>
+					))
+				}
 			</div>
 		</section>
 	</div>
-
 </Layout>
