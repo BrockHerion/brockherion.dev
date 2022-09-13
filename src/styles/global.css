@@ -18,15 +18,15 @@
 	}
 
 	pre {
-		@apply rounded font-inconsolata p-3 my-2 text-sm;
+		@apply rounded font-inconsolata p-3 my-2 text-xs;
 	}
 
 	p > code {
-		@apply py-1 px-2 bg-gray-700 shadow-sm dark:shadow-none text-sm rounded;
+		@apply py-1 px-2 bg-gray-700 shadow-sm dark:shadow-none text-xs rounded;
 	}
 
 	blockquote {
-		@apply relative italic before:w-2 before:h-full before:absolute before:bg-emerald-500;
+		@apply relative italic before:w-1 before:h-full before:absolute before:bg-emerald-500 my-2;
 	}
 
 	blockquote > p {
@@ -35,16 +35,20 @@
 }
 
 @layer components {
+	.post p, a, ul, ol {
+		@apply text-base;
+	}
+
 	.post h2 {
-		@apply flex flex-col text-3xl my-2 after:w-16 after:h-2 after:bg-emerald-400 after:mt-2 mb-6;
+		@apply flex flex-col text-2xl after:w-16 after:h-2 after:bg-emerald-400 after:mt-2 mb-6 mt-8;
 	}
 
 	.post h3 {
-		@apply flex flex-col text-2xl my-2 after:w-10 after:h-1 after:bg-emerald-400 mb-4;
+		@apply flex flex-col text-xl mt-2 after:w-10 after:h-1 after:bg-emerald-400 mb-4;
 	}
 
 	.post h4 {
-		@apply flex flex-col text-xl my-2 mb-1;
+		@apply flex flex-col text-lg my-2 mb-1;
 	}
 
 	.post h5 {
