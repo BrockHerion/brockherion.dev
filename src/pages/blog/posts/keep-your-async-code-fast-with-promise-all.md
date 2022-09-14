@@ -92,7 +92,7 @@ async function fetchPokemon(limit, offset) {
   }
 
   // Make our request
-  const result = await Promise.all()(requests);
+  const result = await Promise.all(requests);
 
   // Flatten the results
   const pokemon = result.flatMap((page) => page);
