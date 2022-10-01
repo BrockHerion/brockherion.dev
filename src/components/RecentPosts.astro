@@ -1,21 +1,29 @@
 ---
-const allPosts = await Astro.glob('../pages/blog/posts/*.md');
+const allPosts = await Astro.glob("../pages/blog/posts/*.md");
 const recentPosts = allPosts
-	.filter(post => post.frontmatter.isPublished)
-	.sort((a, b) => new Date(b.frontmatter.publishedOn).valueOf() - new Date(a.frontmatter.publishedOn).valueOf())
-	.slice(0, 5);
+  .filter((post) => post.frontmatter.isPublished)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.publishedOn).valueOf() -
+      new Date(a.frontmatter.publishedOn).valueOf()
+  )
+  .slice(0, 5);
 ---
 
 <h4 class="text-2xl mb-3">Fresh off the press 🗞</h4>
 <ul class="space-y-6 m-auto mb-12">
-	{recentPosts.map(post => (
-	<li>
-		<p class="italic">{post.frontmatter.publishedOn}</p>
-		<a class="text-emerald-400 font-semibold tracking-wide hover:underline text-lg"
-			href={`/blog/posts/${post.frontmatter.slug}`}>
-			{post.frontmatter.title}
-		</a>
-		<p class="text-lg">{post.frontmatter.description}</p>
-	</li>
-	))}
+  {
+    recentPosts.map((post) => (
+      <li>
+        <p class="italic text-sm">{post.frontmatter.publishedOn}</p>
+        <a
+          class="text-emerald-400 font-semibold tracking-wide hover:underline text-lg"
+          href={`/blog/posts/${post.frontmatter.slug}`}
+        >
+          {post.frontmatter.title}
+        </a>
+        <p>{post.frontmatter.description}</p>
+      </li>
+    ))
+  }
 </ul>

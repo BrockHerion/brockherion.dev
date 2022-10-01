@@ -1,30 +1,28 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
 
-const { content } = Astro.props
+const { content } = Astro.props;
 const { title, description, permalink, image } = content;
-
 ---
 
-<html lang={ content.lang || 'en' }>
+<html lang={content.lang || "en"}>
+  <head>
+    <BaseHead {title} {description} {permalink} {image} />
+  </head>
 
-	<head>
-		<BaseHead {title} {description} {permalink} {image} />
-	</head>
-
-	<body class="bg-gray-800">
-		<Header />
-		<main class="2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 py-6">
-			<slot />
-		</main>
-	</body>
-
-	<footer class="flex-none 2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 pt-6 flex flex-col items-center">
-		<div class="bg-emerald-400 w-12 h-1 mb-2"></div>
-		<section class="flex items-center justify-center pb-4">
-			<small>&copy;Brock Herion 2022</small>
-		</section>
-	</footer>
-
+  <body class="bg-gray-900">
+    <Header />
+    <main class="2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 py-6">
+      <slot />
+    </main>
+    <footer
+      class="flex-none 2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 pt-6 flex flex-col items-center"
+    >
+      <div class="bg-emerald-400 w-12 h-1 mb-2"></div>
+      <section class="flex items-center justify-center pb-4">
+        <small>&copy;Brock Herion 2022</small>
+      </section>
+    </footer>
+  </body>
 </html>

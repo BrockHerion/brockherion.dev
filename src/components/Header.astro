@@ -1,54 +1,103 @@
 ---
-import twitterSvg from '/twitter.svg';
-import githubSvg from '/github.svg';
-import linkedinSvg from '/linkedin.svg';
-import instagramSvg from '/instagram.svg';
-import facebookSvg from '/facebook.svg';
+import twitterSvg from "/twitter.svg";
+import githubSvg from "/github.svg";
+import linkedinSvg from "/linkedin.svg";
+import instagramSvg from "/instagram.svg";
+import facebookSvg from "/facebook.svg";
 ---
 
 <header
-	class="flex-none 2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 pt-12 flex flex-col items-center md:justify-between justify-center">
-	<div class="flex flex-col justify-center w-full items-center">
-		<a href="/" class="flex items-center">
-			<span class="text-4xl md:5xl font-inconsolata">
-				Brock Herion
-			</span>
-		</a>
-		<div class="bg-emerald-400 w-12 h-1 md:mb-2 mt-2"></div>
-	</div>
-	<div class="flex justify-between items-center w-full my-6 flex-col-reverse md:flex-row">
-		<nav>
-			<ul class="flex items-center justify-center">
-				<li class="mr-6 hover:underline font-inconsolata text-lg">
-					<a href="/">Home</a>
-				</li>
-				<li class="mr-6 hover:underline font-inconsolata text-lg">
-					<a href="/about">About</a>
-				</li>
-				<li class="mr-6 hover:underline font-inconsolata text-lg">
-					<a href="/blog">Blog</a>
-				</li>
-				<li class="hover:underline font-inconsolata text-lg">
-					<a href="https://brocksbytes.com" target="_blank" rel="noreferrer">Newsletter</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="flex items-center justify-center space-x-3 mb-4 md:m-0">
-			<a href="https://twitter.com/BrockHerion" rel="noreferrer" target="_blank">
-				<img src={twitterSvg} width="20" height="20" alt="Twitter" aria-label="Twitter" />
-			</a>
-			<a href="https://github.com/BrockHerion" rel="noreferrer" target="_blank">
-				<img src={githubSvg} width="20" height="20" alt="GitHub" aria-label="GitHub" />
-			</a>
-			<a href="https://www.linkedin.com/in/brock-j-herion-34279a176/" rel="noreferrer" target="_blank">
-				<img src={linkedinSvg} width="20" height="20" alt="LinkedIn" aria-label="LinkedIn" />
-			</a>
-			<a href="https://www.instagram.com/brock_herion/" rel="noreferrer" target="_blank">
-				<img src={instagramSvg} width="20" height="20" alt="Instagram" aria-label="Instagram" />
-			</a>
-			<a href="https://www.facebook.com/brockheriondev" rel="noreferrer" target="_blank">
-				<img src={facebookSvg} width="20" height="20" alt="Facebook" aria-label="Facebook" />
-			</a>
-		</div>
-	</div>
+  class="flex-none 2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 pt-12 flex flex-col items-center md:justify-between justify-center"
+>
+  <div class="flex flex-col justify-center w-full items-center">
+    <a href="/" class="flex items-center">
+      <span class="text-4xl md:5xl"> Brock Herion</span>
+    </a>
+    <div class="bg-emerald-400 w-12 h-1 md:mb-2 mt-2"></div>
+  </div>
+  <div
+    class="flex justify-between items-center w-full my-6 flex-col-reverse md:flex-row"
+  >
+    <nav>
+      <ul class="flex items-center justify-center space-x-6">
+        <li class="nav-link">
+          <a href="/">Home</a>
+        </li>
+        <li class="nav-link">
+          <a href="/about">About</a>
+        </li>
+        <li class="nav-link">
+          <a href="/blog">Blog</a>
+        </li>
+        <li class="nav-link">
+          <a href="https://brocksbytes.com" target="_blank" rel="noreferrer"
+            >Newsletter</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="flex items-center justify-center space-x-3 mb-4 md:m-0">
+      <a
+        href="https://twitter.com/BrockHerion"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          src={twitterSvg}
+          width="20"
+          height="20"
+          alt="Twitter"
+          aria-label="Twitter"
+        />
+      </a>
+      <a href="https://github.com/BrockHerion" rel="noreferrer" target="_blank">
+        <img
+          src={githubSvg}
+          width="20"
+          height="20"
+          alt="GitHub"
+          aria-label="GitHub"
+        />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/brock-j-herion-34279a176/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          src={linkedinSvg}
+          width="20"
+          height="20"
+          alt="LinkedIn"
+          aria-label="LinkedIn"
+        />
+      </a>
+      <a
+        href="https://www.instagram.com/brock_herion/"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          src={instagramSvg}
+          width="20"
+          height="20"
+          alt="Instagram"
+          aria-label="Instagram"
+        />
+      </a>
+      <a
+        href="https://www.facebook.com/brockheriondev"
+        rel="noreferrer"
+        target="_blank"
+      >
+        <img
+          src={facebookSvg}
+          width="20"
+          height="20"
+          alt="Facebook"
+          aria-label="Facebook"
+        />
+      </a>
+    </div>
+  </div>
 </header>

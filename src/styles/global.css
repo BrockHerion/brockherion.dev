@@ -5,37 +5,36 @@
 @layer base {
 	html,
 	body {
-		@apply text-slate-100;
-	}
-
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		@apply font-inconsolata;
+		@apply text-slate-100 font-proxima-nova;
 	}
 
 	pre {
-		@apply rounded font-inconsolata p-3 my-2 text-xs;
+		@apply rounded p-3 my-2 text-base
 	}
 
 	p > code {
-		@apply py-1 px-2 bg-gray-700 shadow-sm dark:shadow-none text-xs rounded;
+		@apply py-1 px-2 bg-gray-700 shadow-sm dark:shadow-none text-sm rounded;
 	}
 
 	blockquote {
-		@apply relative italic before:w-1 before:h-full before:absolute before:bg-emerald-500 my-2;
+		@apply relative before:w-1 before:h-full before:absolute before:bg-emerald-500 bg-emerald-500/20 my-2;
 	}
 
 	blockquote > p {
-		@apply pl-6;
+		@apply px-6;
+	}
+
+	article {
+		@apply text-lg;
 	}
 }
 
 @layer components {
-	.post p, a, ul, ol {
+	.nav-link {
+		@apply hover:underline hover:text-emerald-500 text-lg;
+	}
+
+	.post a, ul, ol {
 		@apply text-base;
 	}
 

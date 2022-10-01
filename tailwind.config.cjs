@@ -4,10 +4,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'source-code-pro': ['"Source Code Pro"',],
-				'inconsolata': ['"Inconsolata"', "monospace"],
-        'open-sans': ['"Open Sans"', 'sans-serif'],
-      }
+				'proxima-nova': ['proxima-nova', 'sans-serif']
+      },
+			colors: {
+				'grey-2': '#E1E1E1',
+				'grey-8': '#515151',
+				'grey-9': '#3B3B3B',
+				'grey-10': '#222222'
+			}
     },
   },
 	plugins: [

@@ -6,77 +6,72 @@ import code from "/code.webp";
 
 let title = "Home - Brock Herion";
 let description =
-	"I'm Brock. I'm a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer";
+  "I'm Brock. I'm a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer";
 let permalink = "https://brockherion.dev/";
 let image = "/default-social.webp";
 ---
 
 <Layout content={{ title, description, permalink, image }}>
-	<div class="flex flex-col md:flex-row mb-8">
-		<img
-			class="mb-6 w-full h-full"
-			src={code}
-			alt="Picture of Brock"
-			width="890"
-			height="858"
-		/>
-		<div class="flex flex-col md:items-end justify-center">
-			<div class="flex flex-col md:items-end">
-				<h1 class="text-4xl">Hey there 👋</h1>
-				<div class="w-16 h-2 mt-4 bg-emerald-400"></div>
-			</div>
+  <div class="flex flex-col md:flex-row mb-8">
+    <img
+      class="mb-6 w-full h-full"
+      src={code}
+      alt="Picture of Brock"
+      width="890"
+      height="858"
+    />
+    <div class="flex flex-col md:items-end justify-center">
+      <div class="flex flex-col md:items-end">
+        <h1 class="text-4xl">Hey there 👋</h1>
+        <div class="w-16 h-2 mt-4 bg-emerald-400"></div>
+      </div>
 
-			<h2 class="text-2xl mt-6 mb-3 md:text-right">
-				I'm Brock! I'm a software developer, writer, and creator
-			</h2>
-			<h3 class="text-xl mt-4 mb-3 md:text-right">
-				On this site, you&apos;ll find content related to full-stack
-				development with (primarily) React and TypeScript, as well as
-				content about productivity, technology, and more! You&apos;ll
-				also get to know me a little better and get to see some of the
-				cool things I&apos;ve worked on.
-			</h3>
-		</div>
-	</div>
-	<div
-		class="border-2 rounded border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-8"
-	>
-		<h3 class="text-2xl mb-2">Subscribe to Brock's Bytes 📥</h3>
-		<div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col pb-2">
-			<div>
-				<p class="text-lg mb-3 font-inconsolata">
-					Every Sunday, I share an exclusive email with 8 awesome
-					things I found during the week. You'll get to see what I'm
-					learning, building, using, reading, and so much more!
-				</p>
-			</div>
-			<div class="flex flex-col md:items-center md:px-12">
-				<h4 class="text-xl mb-1 md:text-center">
-					You don't want to miss it!
-				</h4>
-				<p class="text-lg mb-3 font-inconsolata md:text-center">
-					Subscribe today and join a growing community of friendly
-					readers
-				</p>
-				<a
-					class="w-full bg-yellow-300 px-4 py-2 rounded text-slate-800 font-bold mb-2 text-center"
-					type="submit"
-					href="https://brocksbytes.com"
-					target="_blank"
-					rel="noreferrer"
-					>Get access
-				</a>
-			</div>
-		</div>
-	</div>
-	<FeaturedPosts />
-	<RecentPosts />
-	<div class="flex justify-center">
-		<a
-			href="/blog"
-			class="bg-emerald-400 px-3 py-4 rounded-md text-gray-800"
-		>
-			Explore more posts
-		</a>
-	</div>
+      <h2 class="text-2xl mt-6 mb-3 md:text-right">
+        I'm Brock! I'm a software developer, writer, and creator
+      </h2>
+      <h3 class="text-xl mt-4 mb-3 md:text-right">
+        On this site, you&apos;ll find content related to full-stack development
+        with (primarily) React and TypeScript, as well as content about
+        productivity, technology, and more! You&apos;ll also get to know me a
+        little better and get to see some of the cool things I&apos;ve worked
+        on.
+      </h3>
+    </div>
+  </div>
+  <div class="rounded p-4 bg-gray-700 mb-8">
+    <h3 class="text-2xl mb-2">Subscribe to Brock's Bytes 📥</h3>
+    <div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col pb-2">
+      <div>
+        <p class="text-lg mb-3 font-inter">
+          Every Sunday, I share an exclusive email with 8 awesome things I found
+          during the week. You'll get to see what I'm learning, building, using,
+          reading, and so much more!
+        </p>
+      </div>
+      <div class="flex flex-col md:items-center md:px-12">
+        <h4 class="text-xl mb-1 md:text-center">You don't want to miss it!</h4>
+        <p class="mb-3 font-inter md:text-center">
+          Subscribe today and join a growing community of friendly readers
+        </p>
+        <a
+          class="w-full bg-yellow-300 px-4 py-2 rounded text-slate-800 font-semibold mb-2 text-center"
+          type="submit"
+          href="https://brocksbytes.com"
+          target="_blank"
+          rel="noreferrer"
+          >Get access
+        </a>
+      </div>
+    </div>
+  </div>
+  <FeaturedPosts />
+  <RecentPosts />
+  <div class="flex justify-center">
+    <a
+      href="/blog"
+      class="bg-yellow-300 px-3 py-4 rounded-md text-gray-800 font-semibold"
+    >
+      Explore more posts
+    </a>
+  </div>
 </Layout>
