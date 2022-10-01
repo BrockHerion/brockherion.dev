@@ -1,11 +1,11 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
 
 export interface Props {
-	title: string;
-	description: string;
-	permalink: string;
-	image?: string;
+  title: string;
+  description: string;
+  permalink: string;
+  image?: string;
 }
 const { title, description, permalink, image } = Astro.props as Props;
 ---
@@ -29,7 +29,7 @@ const { title, description, permalink, image } = Astro.props as Props;
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="@brockherion">
+<meta name="twitter:site" content="@brockherion" />
 <meta name="twitter:url" content={permalink} />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
@@ -38,8 +38,14 @@ const { title, description, permalink, image } = Astro.props as Props;
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link
-	href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro&display=swap"
-	rel="stylesheet" />
+  href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Code+Pro&display=swap"
+  rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://use.typekit.net/auu7ggm.css" />
 
 <!-- Plausible analytics -->
-<script defer data-domain="brockherion.dev" src="https://plausible.io/js/plausible.js"></script>
+<script
+  defer
+  data-domain="brockherion.dev"
+  src="https://plausible.io/js/plausible.js"
+></script>
