@@ -20,6 +20,7 @@
     "tailwind": "^4.0.0"
   },
   "dependencies": {
+    "astro-icon": "^0.7.3",
     "preact": "^10.7.3"
   }
 }
