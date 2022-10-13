@@ -9,7 +9,7 @@
 	}
 
 	pre {
-		@apply rounded p-3 my-2 text-base
+		@apply rounded p-3 my-2 text-sm
 	}
 
 	p > code {
@@ -26,6 +26,10 @@
 
 	article {
 		@apply text-lg;
+	}
+
+	[astro-icon] {
+		@apply w-6 h-6 hover:text-emerald-500;
 	}
 }
 

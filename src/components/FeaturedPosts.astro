@@ -17,7 +17,7 @@ const popularPosts = allPosts
       {
         popularPosts.map((post) => (
           <a href={`/blog/posts/${post.frontmatter.slug}`}>
-            <div class="bg-gray-700 shadow dark:shadow-none rounded overflow-hidden h-96 px-2">
+            <div class="bg-emerald-400/10 mb-8 border border-emerald-400 shadow dark:shadow-none rounded overflow-hidden h-96 px-2">
               <h5 class="text-xl mt-3 mb-6 px-2 h-20">
                 {post.frontmatter.title}
               </h5>

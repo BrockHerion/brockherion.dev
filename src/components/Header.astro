@@ -1,22 +1,18 @@
 ---
-import twitterSvg from "/twitter.svg";
-import githubSvg from "/github.svg";
-import linkedinSvg from "/linkedin.svg";
-import instagramSvg from "/instagram.svg";
-import facebookSvg from "/facebook.svg";
+import { Icon } from "astro-icon";
 ---
 
 <header
-  class="flex-none 2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 pt-12 flex flex-col items-center md:justify-between justify-center"
+  class="flex-none mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-6 flex flex-col items-center md:justify-between justify-center"
 >
-  <div class="flex flex-col justify-center w-full items-center">
+  <div class="flex flex-col justify-center max-w-4xl mx-auto items-center">
     <a href="/" class="flex items-center">
       <span class="text-4xl md:5xl"> Brock Herion</span>
     </a>
     <div class="bg-emerald-400 w-12 h-1 md:mb-2 mt-2"></div>
   </div>
   <div
-    class="flex justify-between items-center w-full my-6 flex-col-reverse md:flex-row"
+    class="flex justify-between items-center max-w-4xl w-full mx-auto my-6 flex-col-reverse md:flex-row"
   >
     <nav>
       <ul class="flex items-center justify-center space-x-6">
@@ -42,61 +38,31 @@ import facebookSvg from "/facebook.svg";
         rel="noreferrer"
         target="_blank"
       >
-        <img
-          src={twitterSvg}
-          width="20"
-          height="20"
-          alt="Twitter"
-          aria-label="Twitter"
-        />
+        <Icon name="mdi:twitter" />
       </a>
       <a href="https://github.com/BrockHerion" rel="noreferrer" target="_blank">
-        <img
-          src={githubSvg}
-          width="20"
-          height="20"
-          alt="GitHub"
-          aria-label="GitHub"
-        />
+        <Icon name="mdi:github" />
       </a>
       <a
         href="https://www.linkedin.com/in/brock-j-herion-34279a176/"
         rel="noreferrer"
         target="_blank"
       >
-        <img
-          src={linkedinSvg}
-          width="20"
-          height="20"
-          alt="LinkedIn"
-          aria-label="LinkedIn"
-        />
+        <Icon name="mdi:linkedin" />
       </a>
       <a
         href="https://www.instagram.com/brock_herion/"
         rel="noreferrer"
         target="_blank"
       >
-        <img
-          src={instagramSvg}
-          width="20"
-          height="20"
-          alt="Instagram"
-          aria-label="Instagram"
-        />
+        <Icon name="mdi:instagram" />
       </a>
       <a
         href="https://www.facebook.com/brockheriondev"
         rel="noreferrer"
         target="_blank"
       >
-        <img
-          src={facebookSvg}
-          width="20"
-          height="20"
-          alt="Facebook"
-          aria-label="Facebook"
-        />
+        <Icon name="mdi:facebook" />
       </a>
     </div>
   </div>
