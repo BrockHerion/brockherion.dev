@@ -11,9 +11,9 @@ image: /posts/enums-vs-typed-strings-in-typescript.webp
 permalink: "https://brockherion.dev/blog/posts/enums-vs-typed-strings-in-typescript"
 ---
 
-In TypeScript, there are a few ways to express named constants. If you're familar with backend languages like C# and Java, there's a very good chance that you've worked with enums. TypeScript supports enums as well and is one of the few TypeScript features has that JavaScript does not.
+In TypeScript, there are a few ways to express named constants. If you're familiar with backend languages like C# and Java, there's a very good chance that you've worked with enums. TypeScript supports enums as well and is one of the few TypeScript features that JavaScript does not.
 
-However, enums are not the only way to create named constants in TypeScript. One other way is to use a union of string literals, and in this article, we're going to look at what the differences are between each approach.
+However, enums are not the only way to create named constants in TypeScript. One other way is to use a union of string literals, and in this article, we're going to look at the differences between each approach.
 
 So grab yourself a cup of coffee, or tea if that’s more your thing, and let’s get into it!
 
@@ -38,7 +38,7 @@ getBrandDetails('Toyota'); // Error, 'Toyota' is not assignable to type Electric
 
 ```
 
-String literal types have the advantage of not generating any extra code when we build our application, which leads to a smaller JavaScript bundle. This type is only used by TypeScript at compile time. TypeScipt will also provide you with auto-completion for your string values, making usage even easier.
+String literal types have the advantage of not generating any extra code when we build our application, which leads to a smaller JavaScript bundle. This type is only used by TypeScript at compile time. typescript will also provide you with auto-completion for your string values, making usage even more effortless.
 
 ## Using Enums
 
@@ -53,7 +53,7 @@ enum ElectricCarBrands {
 }
 ```
 
-Enums in TypeScript represent both strings and numbers. In the example above, `Tesla` would be assigned a value of `0`, `Polestar` a value of `1`, and so on. If we wanted to, we could assign our own intializers to our enum values:
+Enums in TypeScript represent both strings and numbers. In the example above, `Tesla` would be assigned a value of `0`, `Polestar` a value of `1`, and so on. If we wanted to, we could assign our own initializers to our enum values:
 
 ```ts
 enum ElectricCarBrands {
@@ -63,7 +63,7 @@ enum ElectricCarBrands {
 }
 ```
 
-The values in the enum still represent numbers, but in this case we're starting with `Tesla` and `1` and incrementing from there. This means `Polestar` would have a value of `2`.
+The values in the enum still represent numbers, but in this case, we're starting with `Tesla` and `1` and incrementing from there. This means `Polestar` would have a value of `2`.
 
 And we can now use enum in a function:
 
@@ -103,7 +103,7 @@ enum ElectricCarBrands {
 }
 ```
 
-String enums are useful when you're trying to debug an issue with your code. Instead of trying to figure out what value some number corresonds to, you have a readable and meaningful value to help you.
+String enums are useful when you're trying to debug an issue with your code. Instead of trying to figure out what value some number corresponds to, you have a readable and meaningful value to help you.
 
 String enums also have a smaller footprint when compiled to JavaScript:
 
@@ -120,9 +120,9 @@ var ElectricCarBrands;
 
 ## Which should you use?
 
-Like all things in software development, it depends. I personally prefer using string literal types. To me, they're simpler and have no footprint when compiled to JavaScript. With applications I build, I haven't had a case where I've needed something specific that an enum does over a string literal type.
+Like all things in software development, it depends. I personally prefer using string literal types. To me, they're simpler and have no footprint when compiled into JavaScript. With applications I build, I haven't had a case where I've needed something specific that an enum does over a string literal type.
 
-That being said, you might have a situation where an enum just makes more sense. For example, with an enum you can iterate over it's values. You cannot do that with a string literal type. There is also this case that Cam Pedersen describes in a similar article on [Enums vs String Literals in TypeScript](https://campedersen.com/enum-vs-string/).
+That being said, you might have a situation where an enum just makes more sense. For example, with an enum you can iterate over its values. You cannot do that with a string literal type. There is also this case that Cam Pedersen describes in a similar article on [Enums vs String Literals in TypeScript](https://campedersen.com/enum-vs-string/).
 
 ## Wrap up
 
