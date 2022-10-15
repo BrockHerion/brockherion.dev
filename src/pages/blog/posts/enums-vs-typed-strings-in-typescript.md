@@ -38,7 +38,7 @@ getBrandDetails('Toyota'); // Error, 'Toyota' is not assignable to type Electric
 
 ```
 
-String literal types have the advantage of not generating any extra code when we build our application, which leads to a smaller JavaScript bundle. This type is only used by TypeScript at compile time. typescript will also provide you with auto-completion for your string values, making usage even more effortless.
+String literal types have the advantage of not generating any extra code when we build our application, which leads to a smaller JavaScript bundle. This type is only used by TypeScript at compile time. TypeScript will also provide you with auto-completion for your string values, making usage even more effortless.
 
 ## Using Enums
 
