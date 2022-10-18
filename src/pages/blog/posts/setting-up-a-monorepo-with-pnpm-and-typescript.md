@@ -135,7 +135,7 @@ The default setup for each project is fine. The one change we do have to make is
 	"name": "@monorepo/admin",
 	// ...
 	"dependencies": {
-		"@demo/shared": "workspace:*",
+		"@monorepo/shared": "workspace:*",
 		// ...
   },
 }
@@ -145,7 +145,7 @@ The default setup for each project is fine. The one change we do have to make is
 	"name": "@monorepo/client",
 	// ...
 	"dependencies": {
-		"@demo/shared": "workspace:*",
+		"@monorepo/shared": "workspace:*",
 		// ...
   },
 }

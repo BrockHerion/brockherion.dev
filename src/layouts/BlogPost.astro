@@ -1,9 +1,19 @@
 ---
 import Layout from "./Layout.astro";
+import { getReadingTime } from "../lib/readingTime";
 
-const { content } = Astro.props;
-const { title, subTitle, description, publishedOn, image, permalink, slug } =
-  content;
+const { content, rawContent } = Astro.props;
+
+const {
+  title,
+  subTitle,
+  description,
+  publishedOn,
+  image,
+  permalink,
+  slug,
+  html,
+} = content;
 
 const allPosts = await Astro.glob("../pages/blog/posts/*.md");
 const filteredPosts = allPosts
@@ -32,7 +42,9 @@ const filteredPosts = allPosts
       alt={title}
       class="rounded mb-1"
     />
-    <span class="italic">Published {publishedOn}</span>
+    <span class="italic text-sm"
+      >Published {publishedOn} - {getReadingTime(rawContent())} minute read
+    </span>
     <article class="flex flex-col my-6 tracking-wider post">
       <slot />
     </article>
