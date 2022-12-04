@@ -12,14 +12,8 @@ let image = "/default-social.webp";
 ---
 
 <Layout content={{ title, description, permalink, image }}>
-  <div class="flex flex-col md:flex-row mb-8 space-x-6">
-    <img
-      class="mb-6 w-full h-full"
-      src={code}
-      alt="Picture of Brock"
-      width="890"
-      height="858"
-    />
+  <div class="flex flex-col md:grid md:grid-cols-2 mb-8 space-x-4">
+    <img class="mb-6 w-full" src={code} alt="Picture of Brock" />
     <div class="flex flex-col md:items-end justify-center">
       <div class="flex flex-col md:items-end">
         <h1 class="text-4xl">Hey there 👋</h1>
@@ -30,10 +24,10 @@ let image = "/default-social.webp";
         I'm Brock! I'm a software developer, writer, and content creator
       </h2>
       <h3 class="text-xl mt-4 mb-3 md:text-right">
-        On this site, you&apos;ll find content related to full-stack development
-        with React, TypeScript, and other languages, as well as productivity,
-        technology, and more! You&apos;ll also get to know me a little better
-        and get to see some of the cool things I&apos;ve worked on.
+        On this site, you&apos;ll find content related to full-stack software
+        development, productivity, technology, and more! You&apos;ll also get to
+        know me a little better and get to see some of the cool things I&apos;ve
+        worked on.
       </h3>
     </div>
   </div>
