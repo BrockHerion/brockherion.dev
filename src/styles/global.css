@@ -9,7 +9,7 @@
 	}
 
 	pre {
-		@apply rounded p-3 my-2 text-sm
+		@apply rounded p-3 my-2 text-sm;
 	}
 
 	p > code {
@@ -38,6 +38,9 @@
 		@apply hover:underline hover:text-emerald-500 text-lg;
 	}
 
+	.post {
+	}
+
 	.post a, ul, ol {
 		@apply text-base;
 	}
@@ -59,11 +62,11 @@
 	}
 
 	.post ul {
-		@apply list-inside list-disc ml-4;
+		@apply list-inside list-disc ml-4 leading-9;
 	}
 
 	.post ol {
-		@apply list-decimal list-inside ml-4;
+		@apply list-decimal list-inside ml-4 leading-9;
 	}
 
 	.post a {
@@ -71,6 +74,6 @@
 	}
 
 	.post p {
-		@apply my-2;
+		@apply my-2 leading-loose opacity-95 text-base;
 	}
 }

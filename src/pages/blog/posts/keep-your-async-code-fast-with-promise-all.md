@@ -11,8 +11,6 @@ image: /posts/keep-your-async-code-fast-with-promise-all.webp
 permalink: "https://brockherion.dev/blog/posts/keep-your-async-code-fast-with-promise-all"
 ---
 
-Hey there!
-
 While working on [Chirpmark](https://chirpmark.com), my app for managing Twitter bookmarks, I came across a scenario where I needed to resolve Promises in a loop. I was working on fixing a bug where I needed could only fetch 100 Tweets in a single request. The solution was the batch my requests, which meant I had to send my requests in a loop. But how could I do that when using the `fetch` API, which is asynchronyous?
 
 The solution was to use `Promise.all()` and today, we're going to learn about this method and why it's useful. We'll talk about why you would use `Promise.all()` and how to use it with some code examples.

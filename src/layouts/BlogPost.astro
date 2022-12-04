@@ -30,11 +30,6 @@ const filteredPosts = allPosts
 
 <Layout content={{ title, description, permalink, image }}>
   <div>
-    <h1 class="md:text-5xl text-3xl py-6">
-      {title}
-      <div class="w-16 h-2 mt-4 bg-emerald-400"></div>
-    </h1>
-    <h2 class="md:text-2xl text-xl mb-4 opacity-60">{subTitle}</h2>
     <img
       src={image}
       width={1600}
@@ -42,16 +37,24 @@ const filteredPosts = allPosts
       alt={title}
       class="rounded mb-1"
     />
-    <span class="italic text-sm"
-      >Published {publishedOn} - {getReadingTime(rawContent())} minute read
-    </span>
-    <article class="flex flex-col my-6 tracking-wider post">
+    <div class="w-full">
+      <h1 class="md:text-5xl text-3xl py-6">
+        {title}
+        <div class="w-16 h-2 mt-4 bg-emerald-400"></div>
+      </h1>
+      <h2 class="md:text-2xl text-xl mb-4 opacity-60">{subTitle}</h2>
+      <p class="italic text-center">
+        Brock Herion - {publishedOn} - {getReadingTime(rawContent())} minute read
+      </p>
+    </div>
+
+    <article class="flex flex-col my-6 tracking-wider max-w-prose mx-auto post">
       <slot />
     </article>
     <section
       class="border-2 rounded border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-6"
     >
-      <div class="max-w-sm m-auto">
+      <div class="flex flex-col items-center max-w-sm mx-auto">
         <h3 class="text-center text-2xl font-semibold">
           There's more where that came from with Brock's Bytes!
         </h3>
