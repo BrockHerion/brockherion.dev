@@ -3,12 +3,12 @@ import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 
 const { content } = Astro.props;
-const { title, description, permalink, image } = content;
+const { title, description, permalink, image, keywords } = content;
 ---
 
 <html lang={content.lang || "en"}>
   <head>
-    <BaseHead {title} {description} {permalink} {image} />
+    <BaseHead {title} {description} {permalink} {image} {keywords} />
   </head>
 
   <body class="bg-gray-900">
@@ -23,7 +23,7 @@ const { title, description, permalink, image } = content;
     >
       <div class="bg-emerald-400 w-12 h-1 mb-2"></div>
       <section class="flex items-center justify-center pb-4">
-        <small>&copy; Brock Herion 2022</small>
+        <small>&copy; Brock Herion 2023</small>
       </section>
     </footer>
   </body>

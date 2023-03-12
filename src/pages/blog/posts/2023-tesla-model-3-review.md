@@ -4,8 +4,8 @@ title: "Does the Telsa Model 3 Really Live up to the Hype?"
 subTitle: "The Tesla Model 3 is one of the most iconic EVs on the road, but does it really live up the hype?"
 slug: 2023-tesla-model-3-review
 description: "The Tesla Model 3 is one of the most iconic EVs on the road, but does it really live up the hype?"
-isPublished: true
-isFeatured: true
+isPublished: false
+isFeatured: false
 publishedOn: "December 4, 2022"
 image: /posts/2023-tesla-model-3-review.webp
 permalink: "https://brockherion.dev/blog/posts/2023-tesla-model-3-review"
