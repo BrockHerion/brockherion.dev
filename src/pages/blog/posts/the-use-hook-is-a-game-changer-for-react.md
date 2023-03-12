@@ -1,9 +1,9 @@
 ---
 layout: "../../../layouts/BlogPost.astro"
 title: The use hook is a game changer for React
-subTitle: The React use hook would let use resolve promises within our React components and hooks, including on the client.
 slug: the-use-hook-is-a-game-changer-for-react
 description: The React use hook would let use resolve promises within our React components and hooks, including on the client.
+keywords: "react, hook, react hooks, javascript, typescript"
 isPublished: true
 isFeatured: false
 publishedOn: "October 17, 2022"
@@ -68,8 +68,6 @@ That being said, it will be interesting to see if/how these libraries introduce 
 
 ## Wrap up
 
-To me, `use` is one of the coolest features coming to React and could fundamentally change how we build React apps. I'm really excited to see how `use` gets used and the new patterns that emerge from it. This is a huge feature for not just React itself, but the entire ecosystem as a whole.
+To me, `use` is one of the coolest features coming to React and could fundamentally change how we build React apps. I'm excited to see how `use` gets used and the new patterns that emerge from it. This is a huge feature for not just React itself, but the entire ecosystem as a whole.
 
 How do you feel about the `use` hook? Is this the right direction for React to go? I would love to hear your thoughts on it! You can connect with me on Twitter [@BrockHerion](https://twitter.com/brockherion) or you can [send me an email](mailto:brockherion.dev@gmail.com).
-
-Happy coding!

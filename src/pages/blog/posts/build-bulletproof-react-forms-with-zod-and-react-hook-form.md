@@ -11,11 +11,11 @@ image: /posts/build-forms-with-zod-and-react-hook-form.webp
 permalink: "https://brockherion.dev/blog/posts/build-bulletproof-react-forms-with-zod-and-react-hook-form"
 ---
 
-If you've ever built a form in React before, you know how painful it can be. Trying to manage every part of a form on your own can be tedious. You have to deal with input changes, errors, validation, and so much more. This is where Zod and React Hook Form come into the picture. Using these two libraries in combination let you build forms without all the pain. In this article, we'll look at what Zod and React Hook form do and how to use them together.
+If you've ever built a form in React before, you know how painful it can be. Trying to manage every part of a form on your own can be tedious. You have to deal with input changes, errors, validation, and so much more. This is where Zod and React Hook Form come into the picture. Using these two libraries in combination lets you build forms without all the pain. In this article, we'll look at what Zod and React Hook Form do and how to use them together.
 
 ## What is Zod?
 
-Zod is a TypeScript-first schema creation and validation library. A schema can be anything from a simple string to complicated object. It lets you define how your data should look and behave. From Zod's own documentation,
+Zod is a TypeScript-first schema creation and validation library. A schema can be anything from a simple string to complicated object. It lets you define how your data should look and behave. From Zod's documentation,
 
 > Zod is designed to be as developer-friendly as possible. The goal is to eliminate duplicative type declarations. With Zod, you declare a validator once and Zod will automatically infer the static TypeScript type. It's easy to compose simpler types into complex data structures.
 
@@ -155,9 +155,9 @@ export default function MyForm() {
 }
 ```
 
-Our form is now setup and using Zod as a resolver. If you run this code and try to submit without a first name being populated, you'll see "First name is required" error message.
+Our form is now set up and using Zod as a resolver. If you run this code and try to submit without a first name being populated, you'll see "First name is required" error message.
 
-We could add other validation to our fields as well. For example, if we have an email field, Zod provides validation specifically for that. Or for age field, we could add a range that the age must be between or make sure it's positive or even check if it's a multiple of something.
+We could add other validation to our fields as well. For example, if we have an email field, Zod provides validation specifically for that. Or for the age field, we could add a range that the age must be between or make sure it's positive or even check if it's a multiple of something.
 
 ## Bonus: Using a custom Zod form hook
 
@@ -186,7 +186,7 @@ export default function useZodForm<TSchema extends z.ZodType>(
 
 Notice what our `props` type is. We're removing `resolver` from the default React Hook Form props and adding a new field called `schema`. We can pass our Zod schema right into the hook and still do things like set our default form values.
 
-Lets refactor the example above to use our new hook
+Let's refactor the example above to use our new hook
 
 ```tsx
 import { z } from 'zod';
@@ -232,7 +232,7 @@ export default function MyForm() {
 }
 ```
 
-While this was a small change, it simplies our setup process for setting the resolver.
+While this was a small change, it simplifies our setup process for setting the resolver.
 
 ## Conclusion
 
@@ -241,5 +241,5 @@ In this article we looked at how to use Zod and React Hook Form together. We cre
 Further reading
 
 - [Zod documentation](https://zod.dev/)
-- [React Hook Form documatation](https://react-hook-form.com/)
+- [React Hook Form documentation](https://react-hook-form.com/)
 - [React Hook Form Resolvers](https://github.com/react-hook-form/resolvers)

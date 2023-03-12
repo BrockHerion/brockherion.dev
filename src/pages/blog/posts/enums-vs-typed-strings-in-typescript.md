@@ -1,9 +1,9 @@
 ---
 layout: "../../../layouts/BlogPost.astro"
 title: Enums vs String Literal Types in TypeScript
-subTitle: In TypeScript, named constants can be created by using an enum or with a union of string literal types.
 slug: enums-vs-typed-strings-in-typescript
 description: In TypeScript, named constants can be created by using an enum or with a union of string literal types.
+keywords: "typescript, javascript, enum, string, enum vs string"
 isPublished: true
 isFeatured: false
 publishedOn: "October 11, 2022"
@@ -14,8 +14,6 @@ permalink: "https://brockherion.dev/blog/posts/enums-vs-typed-strings-in-typescr
 In TypeScript, there are a few ways to express named constants. If you're familiar with backend languages like C# and Java, there's a very good chance that you've worked with enums. TypeScript supports enums as well and is one of the few TypeScript features that JavaScript does not.
 
 However, enums are not the only way to create named constants in TypeScript. One other way is to use a union of string literals, and in this article, we're going to look at the differences between each approach.
-
-So grab yourself a cup of coffee, or tea if that’s more your thing, and let’s get into it!
 
 ## Using String Literal Types
 
@@ -133,5 +131,3 @@ Check out the following resources for more info on enums and string literal type
 - [Enums](https://www.typescriptlang.org/docs/handbook/enums.html)
 - [Literal Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
 - [Union Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)
-
-Happy coding!
