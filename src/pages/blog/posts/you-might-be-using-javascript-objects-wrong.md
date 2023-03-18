@@ -1,7 +1,7 @@
 ---
 layout: "../../../layouts/BlogPost.astro"
 title: "You might be using JavaScript objects wrong"
-description: ""
+description: "Objects and maps are used to store key-value pairs in JavaScript. When you should use one over the other?"
 keywords: "typescript, javascript, js, javascript object, js object, map, javascript map"
 slug: you-might-be-using-javascript-objects-wrong
 isPublished: true
