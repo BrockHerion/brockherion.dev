@@ -47,27 +47,12 @@ const filteredPosts = allPosts
       >
         <slot />
       </article>
-      <section
-        class="border-2 rounded border-emerald-400 px-4 py-2 bg-emerald-400/10 mb-6"
-      >
-        <div class="flex flex-col items-center max-w-sm mx-auto">
-          <h3 class="text-center text-2xl font-semibold">
-            There's more where that came from with Brock's Bytes!
-          </h3>
-          <p class="text-center mt-2 mb-6 text-xl leading-5 open-sans">
-            Brock's Bytes is my weekly newsletter where I send an email
-            containing 8 of the best things that I found during the week. You
-            don't want to miss it!
-          </p>
-          <a
-            class="w-full bg-yellow-300 px-4 py-2 rounded text-slate-800 font-bold mb-2 text-center"
-            type="submit"
-            href="https://brocksbytes.com"
-            target="_blank"
-            rel="noreferrer"
-            >Get access
-          </a>
-        </div>
+      <section class="w-full m-auto my-6">
+        <script
+          async
+          data-uid="d0564b50ba"
+          src="https://brocks-bytes.ck.page/d0564b50ba/index.js"
+        ></script>
       </section>
       <section>
         <h3 class="text-2xl mb-3">More Articles</h3>
@@ -75,7 +60,7 @@ const filteredPosts = allPosts
           {
             filteredPosts.map((post) => (
               <a href={`/blog/posts/${post.frontmatter.slug}`}>
-                <div class="h-80 bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden border border-emerald-400 px-2">
+                <div class="h-80 bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden border border-emerald-400 px-4">
                   <h5 class="text-xl mt-3 mb-2 px-2 line-clamp-2">
                     {post.frontmatter.title}
                   </h5>
