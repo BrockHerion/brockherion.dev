@@ -1,5 +1,6 @@
 ---
 import Layout from "./Layout.astro";
+import NewsletterSignUp from "../components/NewsletterSignUp.astro";
 import { getReadingTime } from "../lib/readingTime";
 
 const { content, rawContent } = Astro.props;
@@ -47,20 +48,14 @@ const filteredPosts = allPosts
       >
         <slot />
       </article>
-      <section class="w-full m-auto my-6">
-        <script
-          async
-          data-uid="d0564b50ba"
-          src="https://brocks-bytes.ck.page/d0564b50ba/index.js"
-        ></script>
-      </section>
+      <NewsletterSignUp />
       <section>
-        <h3 class="text-2xl mb-3">More Articles</h3>
+        <h3 class="text-2xl mb-3">More Articles 📰</h3>
         <div class="grid md:grid-cols-3 gap-x-4 gap-y-4">
           {
             filteredPosts.map((post) => (
               <a href={`/blog/posts/${post.frontmatter.slug}`}>
-                <div class="h-80 bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden border border-emerald-400 px-4">
+                <div class="h-80 bg-emerald-400/10 shadow dark:shadow-none rounded overflow-hidden border border-emerald-400 px-2">
                   <h5 class="text-xl mt-3 mb-2 px-2 line-clamp-2">
                     {post.frontmatter.title}
                   </h5>

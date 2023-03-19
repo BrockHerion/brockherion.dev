@@ -2,6 +2,7 @@
 import FeaturedPosts from "../components/FeaturedPosts.astro";
 import RecentPosts from "../components/RecentPosts.astro";
 import Layout from "../layouts/Layout.astro";
+import NewsletterSignUp from "../components/NewsletterSignUp.astro";
 import code from "/code.webp";
 
 let title = "Home - Brock Herion";
@@ -31,32 +32,7 @@ let image = "/default-social.webp";
       </h3>
     </div>
   </div>
-  <div class="rounded p-4 bg-emerald-400/10 mb-8 border border-emerald-400">
-    <h3 class="text-2xl mb-2">Subscribe to Brock's Bytes 📥</h3>
-    <div class="md:grid md:grid-cols-2 md:gap-x-6 flex flex-col pb-2">
-      <div>
-        <p class="text-lg mb-3 font-inter">
-          Every Sunday, I share an exclusive email with 8 awesome things I found
-          during the week. You'll get to see what I'm learning, building, using,
-          reading, and so much more!
-        </p>
-      </div>
-      <div class="flex flex-col md:items-center md:px-12">
-        <h4 class="text-xl mb-1 md:text-center">You don't want to miss it!</h4>
-        <p class="mb-3 font-inter md:text-center">
-          Subscribe today and join a growing community of friendly readers
-        </p>
-        <a
-          class="w-full bg-yellow-300 px-4 py-2 rounded text-slate-800 font-semibold mb-2 text-center"
-          type="submit"
-          href="https://brocksbytes.com"
-          target="_blank"
-          rel="noreferrer"
-          >Get access
-        </a>
-      </div>
-    </div>
-  </div>
+  <NewsletterSignUp />
   <FeaturedPosts />
   <RecentPosts />
   <div class="flex justify-center">
