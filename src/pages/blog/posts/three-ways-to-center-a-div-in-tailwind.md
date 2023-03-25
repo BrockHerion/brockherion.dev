@@ -3,7 +3,7 @@ layout: "../../../layouts/BlogPost.astro"
 title: Three ways to center a div using Tailwind CSS
 subTitle: Promise.all() is a method in JavaScript that you can use to resolve your Promises in parallel. It  returns a Promise with the results of the promises passed in.
 slug: three-ways-to-center-a-div-in-tailwind
-description: Promise.all() is a method in JavaScript that you can use to resolve your Promsies in parallel. It  returns a Promise with the results of the promises passed in.
+description: Promise.all() is a method in JavaScript that you can use to resolve your Promises in parallel. It  returns a Promise with the results of the promises passed in.
 isPublished: false
 isFeatured: false
 publishedOn: "September 28, 2022"
