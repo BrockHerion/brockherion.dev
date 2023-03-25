@@ -6,7 +6,7 @@ keywords: "goals, personal growth, milestones, build in public"
 slug: my-goals-for-2023
 isPublished: true
 isFeatured: false
-publishedOn: "March 18, 2023"
+publishedOn: "March 25, 2023"
 image: /posts/my-goals-for-2023.webp
 permalink: "https://brockherion.dev/blog/posts/my-goals-for-2023"
 ---
