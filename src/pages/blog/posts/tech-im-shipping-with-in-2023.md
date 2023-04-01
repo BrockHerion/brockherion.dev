@@ -57,6 +57,8 @@ One other app I'm going to leverage heavier this year is Discord. It's a great p
 
 ## Other miscellaneous tools
 
+Other tools I'll be using this year in my coding workflow are
+
 - VS Code for code and text editing
 - iTerm2 with ZSH for my terminal on Mac
 - Windows Terminal with WSL Ubuntu and ZSH on Windows
