@@ -26,7 +26,6 @@ Some other libraries I'll be using are
 - Zustand
 - React Hook Form
 
-
 For projects that will be mostly static content, I'm using Astro. It's what I used to create this site and love the experience it provides. Not every site needs to be a SPA or need SSR, so Astro is what I reach for when I just need a simple, statically generated website.
 
 I would love to be able to use Rust or Ruby on Rails, but I'm not too sure where they fit in. Rust is something I've been meaning to build something with, I just haven't found a great use for it in my apps yet. I also keep seeing Ruby on Rails used for building backends and I've been intrigued by it for some time. I could potentially use Rust for some long running processes or jobs, and Rails for any public APIs. These would be more for my own learning than anything else.
