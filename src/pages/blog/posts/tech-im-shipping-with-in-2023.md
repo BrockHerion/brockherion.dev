@@ -2,7 +2,7 @@
 layout: "../../../layouts/BlogPost.astro"
 title: "Tech I'm shipping with in 2023"
 description: "Here's the tech I'm going to be using in 2023 to ship my side projects"
-keywords: "goals, personal growth, milestones, build in public"
+keywords: "tooling, technology, programming, programming languages, build in public"
 slug: tech-im-shipping-with-in-2023
 isPublished: true
 isFeatured: true
