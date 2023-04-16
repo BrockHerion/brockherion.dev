@@ -16,7 +16,7 @@ In this article, I'll be sharing eight of my favorite libraries that I almost al
 
 ## Eight great React libraries
 
-Each library I picked serves a specific purpose in my stack. I try to not use libraries that do too many things. I would rather a library do one thing and do it well than to try and do too many things. 
+Each library I picked serves a specific purpose in my stack. I try to not use libraries that do too many things. I would rather a library do one thing and do it well than to try and do too many things.
 
 These libraries provide a ton of great functionality with a great developer experience. This allows me to not only build and ship features to my users, but have a pleasant experience doing so.
 
