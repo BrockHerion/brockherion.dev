@@ -70,7 +70,7 @@
 	}
 
 	.post a {
-		@apply hover:text-emerald-500 underline font-semibold tracking-widest;
+		@apply text-emerald-500 border-b border-slate-500 hover:border-emerald-500 font-medium tracking-widest;
 	}
 
 	.post p {
