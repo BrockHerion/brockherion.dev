@@ -2,7 +2,7 @@
 layout: "../../../layouts/BlogPost.astro"
 title: "Why I'm using NanoIDs for my database keys"
 slug: why-im-using-nanoids-for-my-database-keys
-description: "Eight libraries that will make your React apps better for you and your users."
+description: "Here's why I'm using NanoIDs for unique keys in my database models."
 keywords: "typescript, nanoid, primary key, prisma, database"
 isPublished: true
 isFeatured: false
