@@ -5,7 +5,7 @@
 @layer base {
 	html,
 	body {
-		@apply text-slate-100 font-proxima-nova;
+		@apply text-slate-100 font-ibm-plex-mono;
 	}
 
 	pre {

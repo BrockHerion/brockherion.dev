@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-				'proxima-nova': ['proxima-nova', 'sans-serif']
+				'proxima-nova': ['proxima-nova', 'sans-serif'],
+				'ibm-plex-mono': ['IBM Plex Mono', 'monospace']
       },
 			colors: {
 				'grey-2': '#E1E1E1',
