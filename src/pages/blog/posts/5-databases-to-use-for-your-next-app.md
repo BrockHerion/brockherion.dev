@@ -2,7 +2,7 @@
 layout: "../../../layouts/BlogPost.astro"
 title: "5 databases to use for your next app"
 description: "Here are five awesome databases you should for your next application"
-keywords: "goals, personal growth, milestones, build in public"
+keywords: "database, programming, mysql, postgres, serverless"
 slug: 5-databases-to-use-for-your-next-app
 isPublished: true
 isFeatured: false
