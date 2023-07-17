@@ -1,9 +1,10 @@
 ---
-import FeaturedPosts from "../components/FeaturedPosts.astro";
 import RecentPosts from "../components/RecentPosts.astro";
 import Layout from "../layouts/Layout.astro";
 import NewsletterSignUp from "../components/NewsletterSignUp.astro";
-import code from "/code.webp";
+import { motion } from "framer-motion";
+import brock from "/brock-profile-pic.webp";
+import CalendarEmbed from "../components/CalendarEmbed.astro";
 
 let title = "Home - Brock Herion";
 let description =
@@ -12,35 +13,80 @@ let permalink = "https://brockherion.dev/";
 let image = "/default-social.webp";
 ---
 
-<Layout content={{ title, description, permalink, image }}>
-  <div class="flex flex-col md:grid md:grid-cols-2 mb-8 space-x-4">
-    <img class="mb-6 w-full" src={code} alt="Picture of Brock" />
-    <div class="flex flex-col md:items-end justify-center">
-      <div class="flex flex-col md:items-end">
-        <h1 class="text-4xl">Hey there 👋</h1>
-        <div class="w-16 h-2 mt-4 bg-emerald-400"></div>
-      </div>
-
-      <h2 class="text-xl mt-6 mb-3 md:text-right">
-        I'm Brock! I'm a software developer, writer, and content creator
-      </h2>
-      <h3 class="text-lg mt-4 mb-3 md:text-right">
-        On this site, you&apos;ll find content related to full-stack software
-        development, productivity, technology, and more! You&apos;ll also get to
-        know me a little better and get to see some of the cool things I&apos;ve
-        worked on.
-      </h3>
-    </div>
-  </div>
-  <NewsletterSignUp />
-  <FeaturedPosts />
-  <RecentPosts />
-  <div class="flex justify-center">
-    <a
-      href="/blog"
-      class="bg-yellow-300 px-3 py-4 rounded-md text-gray-800 font-semibold"
+<Layout content={{ title, description, permalink, image }} enableAnimation>
+  <section id="hero">
+    <div
+      class="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center"
     >
-      Explore more posts
-    </a>
-  </div>
+      <motion.div
+        client:load
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: [0.1, 1],
+          scale: [0.1, 1],
+        }}
+        transition={{
+          duration: 2.5,
+        }}
+        className="relative flex items-center justify-center"
+      >
+        <div
+          class="absolute mt-52 h-[200px] w-[200px] animate-ping rounded-full border border-amber-700/60"
+        >
+        </div>
+        <div
+          class="absolute mt-52 h-[300px] w-[300px] rounded-full border border-[#333333]"
+        >
+        </div>
+        <motion.div
+          client:load
+          className="absolute mt-52 h-[500px] w-[500px] rounded-full border border-[#333333]"
+          transition={{
+            delay: 2.5,
+            duration: 60,
+            repeat: Infinity,
+            ease: "linear",
+          }}
+          animate={{
+            rotate: 360,
+          }}
+        >
+          <div class="bg-amber-700 w-10 h-10 rounded-full"></div>
+        </motion.div>
+        <div
+          class="absolute mt-52 h-[650px] w-[650px] rounded-full border border-amber-700"
+        >
+        </div>
+        <div
+          class="absolute mt-52 h-[800px] w-[800px] rounded-full border border-[#333333]"
+        >
+        </div>
+      </motion.div>
+      <img
+        src={brock}
+        height={144}
+        width={144}
+        alt="Profile picture"
+        class="relative mx-auto h-36 w-36 rounded-full"
+      />
+      <div class="z-20">
+        <h1 class="px-10 text-3xl font-semibold md:text-4xl lg:text-6xl">
+          Brock Herion
+        </h1>
+
+        <div class="pt-5"></div>
+      </div>
+    </div>
+    <section id="about"></section>
+    <section id="newsletter-signup">
+      <h4 class="text-2xl mb-2 text-zinc-50">Subscribe to my newsletter 📥</h4>
+      <NewsletterSignUp />
+    </section>
+    <section id="recent-posts">
+      <RecentPosts />
+    </section>
+    <section id="contact">
+      <CalendarEmbed />
+    </section>
+  </section>
 </Layout>

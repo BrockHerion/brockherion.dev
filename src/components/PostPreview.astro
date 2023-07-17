@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Link } from "../components/ui/Link";
+import { generatePostUrl } from "../lib/urls";
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const {
+  post: {
+    data: { title, description, publishedOn },
+    slug,
+  },
+} = Astro.props;
+---
+
+<article>
+  <p class="italic text-xs text-zinc-200">
+    {publishedOn}
+  </p>
+  <Link
+    className="font-semibold tracking-wide text-lg mt-0.5 mb-1"
+    href={generatePostUrl(slug)}
+  >
+    {title}
+  </Link>
+  <p class="text-zinc-400 text-sm">{description}</p>
+</article>

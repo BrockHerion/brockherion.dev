@@ -1,9 +1,12 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { generatePermalink } from "../lib/urls";
 
-const { content } = Astro.props;
-const { title, description, permalink, image, keywords } = content;
+const { content, enableAnimation } = Astro.props;
+const { title, description, slug, image, keywords } = content;
+const permalink = generatePermalink(slug);
 ---
 
 <html lang={content.lang || "en"}>
@@ -11,20 +14,13 @@ const { title, description, permalink, image, keywords } = content;
     <BaseHead {title} {description} {permalink} {image} {keywords} />
   </head>
 
-  <body class="bg-gray-900">
-    <Header />
-    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+  <body class="bg-stone-800 text-zinc-50 font-ibm-plex-mono">
+    <Header enableAnimation={enableAnimation} />
+    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-4">
       <div class="max-w-4xl mx-auto">
         <slot />
       </div>
     </main>
-    <footer
-      class="flex-none 2xl:px-96 xl:px-72 lg:px-36 md:px-16 px-4 pt-6 flex flex-col items-center"
-    >
-      <div class="bg-emerald-400 w-12 h-1 mb-2"></div>
-      <section class="flex items-center justify-center pb-4">
-        <small>&copy; Brock Herion 2023</small>
-      </section>
-    </footer>
+    <Footer />
   </body>
 </html>
