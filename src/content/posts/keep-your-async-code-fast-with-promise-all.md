@@ -1,5 +1,4 @@
 ---
-layout: "../../../layouts/BlogPost.astro"
 title: Keep your async code fast with Promise.all()
 description: Promise.all() is a method in JavaScript that you can use to resolve your Promsies in parallel. It  returns a Promise with the results of the promises passed in.
 isPublished: true

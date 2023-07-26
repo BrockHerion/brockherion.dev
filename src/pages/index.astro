@@ -2,91 +2,74 @@
 import RecentPosts from "../components/RecentPosts.astro";
 import Layout from "../layouts/Layout.astro";
 import NewsletterSignUp from "../components/NewsletterSignUp.astro";
-import { motion } from "framer-motion";
-import brock from "/brock-profile-pic.webp";
-import CalendarEmbed from "../components/CalendarEmbed.astro";
+import { Link } from "../components/ui/Link";
 
 let title = "Home - Brock Herion";
 let description =
   "I'm Brock. I'm a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer";
 let permalink = "https://brockherion.dev/";
 let image = "/default-social.webp";
+
+const projects = [
+  {
+    name: "brockherion.dev",
+    description: "My personal website, built with Astro, React, TypeScript, and Tailwind",
+    url: "https://github.com/BrockHerion/brockherion.dev",
+  },
+  {
+    name: "wordle_rs",
+    description: "Wordle clone, written in Rust as a CLI application",
+    url: "https://github.com/BrockHerion/wordle_rs"
+  },
+  {
+    name: "cronthing.com (Coming soon!)",
+    description: "Application for managing background jobs for your serverless applications",
+    url: "#"
+  }
+];
 ---
 
 <Layout content={{ title, description, permalink, image }} enableAnimation>
   <section id="hero">
-    <div
-      class="flex h-screen flex-col items-center justify-center space-y-8 overflow-hidden text-center"
-    >
-      <motion.div
-        client:load
-        initial={{ opacity: 0 }}
-        animate={{
-          opacity: [0.1, 1],
-          scale: [0.1, 1],
-        }}
-        transition={{
-          duration: 2.5,
-        }}
-        className="relative flex items-center justify-center"
-      >
-        <div
-          class="absolute mt-52 h-[200px] w-[200px] animate-ping rounded-full border border-amber-700/60"
-        >
-        </div>
-        <div
-          class="absolute mt-52 h-[300px] w-[300px] rounded-full border border-[#333333]"
-        >
-        </div>
-        <motion.div
-          client:load
-          className="absolute mt-52 h-[500px] w-[500px] rounded-full border border-[#333333]"
-          transition={{
-            delay: 2.5,
-            duration: 60,
-            repeat: Infinity,
-            ease: "linear",
-          }}
-          animate={{
-            rotate: 360,
-          }}
-        >
-          <div class="bg-amber-700 w-10 h-10 rounded-full"></div>
-        </motion.div>
-        <div
-          class="absolute mt-52 h-[650px] w-[650px] rounded-full border border-amber-700"
-        >
-        </div>
-        <div
-          class="absolute mt-52 h-[800px] w-[800px] rounded-full border border-[#333333]"
-        >
-        </div>
-      </motion.div>
-      <img
-        src={brock}
-        height={144}
-        width={144}
-        alt="Profile picture"
-        class="relative mx-auto h-36 w-36 rounded-full"
-      />
-      <div class="z-20">
-        <h1 class="px-10 text-3xl font-semibold md:text-4xl lg:text-6xl">
-          Brock Herion
-        </h1>
-
-        <div class="pt-5"></div>
-      </div>
-    </div>
-    <section id="about"></section>
-    <section id="newsletter-signup">
-      <h4 class="text-2xl mb-2 text-zinc-50">Subscribe to my newsletter 📥</h4>
-      <NewsletterSignUp />
-    </section>
-    <section id="recent-posts">
-      <RecentPosts />
-    </section>
-    <section id="contact">
-      <CalendarEmbed />
-    </section>
+    <h1 class="font-bold text-2xl text-zinc-50 mb-4">Hey, I'm Brock 👋</h1>
+    <p class="mb-2 leading-6 max-w-3xl text-sm text-zinc-300">
+      I'm a full-stack software developer, natural optimist, and proud cat dad.
+      I like to read, play video games, and tinker with things. I love web
+      development and am passionate about building great software.
+    </p>
+    <p class="leading-6 mb-2 max-w-3xl text-sm text-zinc-300">
+      I create content for developers, mainly around building things with React,
+      TypeScript, and Next.js. This comes in the form of blog posts, Tweets, and
+      newsletter articles.
+    </p>
+    <p class="text-zinc-300 leading-6 mb-6 max-w-3xl text-sm">
+      Lately, I've been working on an app for running background jobs for your
+      serverless applications, taking a deeper dive into data structures and
+      algorithms, writing blog posts, and hitting the gym for those sweet gains.
+    </p>
   </section>
+  <section id="recent-posts">
+    <h4 class="text-xl mb-3 text-zinc-200">Blog 📰</h4>
+    <RecentPosts />
+  </section>
+  <section id="newsletter-signup">
+    <h4 class="text-xl mb-2 text-zinc-200">Newsletter 📥</h4>
+    <NewsletterSignUp />
+  </section>
+  <section id="projects">
+    <h4 class="text-xl mb-2 text-zinc-200">Projects 💻</h4>
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-3 mb-6">
+      {
+        projects.map((project) => (
+          <div class="flex flex-col">
+            <div class="mb-1">            
+              <Link href={project.url} target="_blank" rel="noreferrer">{project.name}</Link>
+            </div>
+            <span class="text-sm text-zinc-400">{project.description}</span>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
 </Layout>
