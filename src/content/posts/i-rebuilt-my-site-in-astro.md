@@ -1,5 +1,4 @@
 ---
-layout: "../../../layouts/BlogPost.astro"
 title: I rebuilt my Next.js site in Astro. Does it live up to the hype?
 description: I spent a few hours rebuilding this Next.js site in Astro. Here's how my experience was with it and my thoughts on Astro as a whole.
 isPublished: true
