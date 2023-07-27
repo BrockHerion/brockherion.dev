@@ -8,24 +8,26 @@ let title = "Home - Brock Herion";
 let description =
   "I'm Brock. I'm a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer";
 let permalink = "https://brockherion.dev/";
-let image = "/default-social.webp";
+let image = "/brockheriondev.webp";
 
 const projects = [
   {
     name: "brockherion.dev",
-    description: "My personal website, built with Astro, React, TypeScript, and Tailwind",
+    description:
+      "My personal website, built with Astro, React, TypeScript, and Tailwind",
     url: "https://github.com/BrockHerion/brockherion.dev",
   },
   {
     name: "wordle_rs",
     description: "Wordle clone, written in Rust as a CLI application",
-    url: "https://github.com/BrockHerion/wordle_rs"
+    url: "https://github.com/BrockHerion/wordle_rs",
   },
   {
     name: "cronthing.com (Coming soon!)",
-    description: "Application for managing background jobs for your serverless applications",
-    url: "#"
-  }
+    description:
+      "Application for managing background jobs for your serverless applications",
+    url: "#",
+  },
 ];
 ---
 
@@ -62,8 +64,10 @@ const projects = [
       {
         projects.map((project) => (
           <div class="flex flex-col">
-            <div class="mb-1">            
-              <Link href={project.url} target="_blank" rel="noreferrer">{project.name}</Link>
+            <div class="mb-1">
+              <Link href={project.url} target="_blank" rel="noreferrer">
+                {project.name}
+              </Link>
             </div>
             <span class="text-sm text-zinc-400">{project.description}</span>
           </div>
@@ -71,5 +75,4 @@ const projects = [
       }
     </div>
   </section>
-
 </Layout>

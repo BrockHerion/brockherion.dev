@@ -7,9 +7,9 @@ let title = "Blog - Brock Herion";
 let description =
   "On my blog, you can browse articles on software development, productivity, books, and my life as a developer.";
 let permalink = "https://brockherion.dev/";
-let image = "/default-social.webp";
+let image = "/brockheriondev.webp";
 
-let allPosts = await getCollection("posts")
+let allPosts = await getCollection("posts");
 allPosts = allPosts
   .filter((post) => post.data.isPublished && !post.data.isDraft)
   .sort(
