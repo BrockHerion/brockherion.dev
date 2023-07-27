@@ -3,11 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-	html,
-	body {
-		@apply text-slate-100 font-ibm-plex-mono;
-	}
-
 	pre {
 		@apply rounded p-3 my-2 text-sm;
 	}
@@ -29,36 +24,13 @@
 	}
 
 	[astro-icon] {
-		@apply w-6 h-6 hover:text-emerald-500;
+		@apply w-5 h-5;
 	}
 }
 
 @layer components {
-	.nav-link {
-		@apply hover:underline hover:text-emerald-500 text-lg;
-	}
-
-	.post {
-	}
-
 	.post a, ul, ol {
-		@apply text-base;
-	}
-
-	.post h2 {
-		@apply flex flex-col text-2xl after:w-16 after:h-2 after:bg-emerald-400 after:mt-2 mb-6 mt-8;
-	}
-
-	.post h3 {
-		@apply flex flex-col text-xl mt-2 after:w-10 after:h-1 after:bg-emerald-400 mb-4;
-	}
-
-	.post h4 {
-		@apply flex flex-col text-lg my-2 mb-1;
-	}
-
-	.post h5 {
-		@apply text-base;
+		@apply text-sm;
 	}
 
 	.post ul {
@@ -70,10 +42,6 @@
 	}
 
 	.post a {
-		@apply text-emerald-500 border-b border-slate-500 hover:border-emerald-500 font-medium tracking-widest;
-	}
-
-	.post p {
-		@apply my-2 leading-loose opacity-95 text-base;
+		@apply border-b-2 border-transparent hover:border-amber-700 text-zinc-300 hover:text-zinc-50 text-sm tracking-widest;
 	}
 }

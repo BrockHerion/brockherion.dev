@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Link } from "./ui/Link";
+import { generatePostUrl } from "../lib/urls";
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const {
+  post: {
+    data: { title, publishedOn },
+    slug,
+  },
+} = Astro.props;
+---
+
+<article class="flex justify-between items-center">
+  <Link href={generatePostUrl(slug)}>
+    <span>{title}</span>
+  </Link>
+
+  <span class="text-xs">{publishedOn}</span>
+</article>

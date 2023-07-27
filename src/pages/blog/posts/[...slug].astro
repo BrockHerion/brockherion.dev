@@ -1,0 +1,100 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import { generateImageUrl } from "../../../lib/urls";
+import { getReadingTime } from "../../../lib/readingTime";
+import PostRow from "../../../components/PostRow.astro";
+import { Link } from "../../../components/ui/Link";
+import Icon from "astro-icon";
+import NewsletterSignUp from "../../../components/NewsletterSignUp.astro";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+export async function getRecommendedArticles(slug: string) {
+  const posts = await getCollection("posts");
+
+  const filteredPosts = posts
+    .filter(
+      (post) =>
+        post.slug !== slug && post.data.isPublished && !post.data.isDraft
+    )
+    .sort(
+      (a, b) =>
+        new Date(b.data.publishedOn).valueOf() -
+        new Date(a.data.publishedOn).valueOf()
+    )
+    .slice(0, 5);
+
+  return filteredPosts;
+}
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const imageUrl = generateImageUrl(post.slug, "webp");
+const recommendedArticles = await getRecommendedArticles(post.slug);
+---
+
+<Layout
+  content={{
+    title: post.data.title,
+    description: post.data.description,
+    image: imageUrl,
+    keywords: post.data.keywords,
+  }}
+>
+  <div>
+    <article
+      class="flex flex-col my-6 tracking-wider prose prose-zinc dark:prose-invert prose-h1:text-2xl prose-h2:text-xl prose-h3:text-base prose-h4:text-sm prose-p:text-sm prose-p:leading-loose prose-a:no-underline mx-auto post"
+    >
+      <section id="post-header">
+        <div class="flex mb-2">
+          <Link
+            href="/blog"
+            className="flex items-center justify-start border-none text-xs"
+          >
+            <Icon class="mr-1" name="radix-icons:arrow-left" />
+            <span>Back</span>
+          </Link>
+        </div>
+
+        <div class="w-full">
+          <h1>
+            {post.data.title}
+          </h1>
+          <div class="text-zinc-400 flex justify-start items-center text-sm">
+            <span>{post.data.publishedOn}</span>
+            <Icon name="radix-icons:dot-filled" class="mx-2" />
+            <span>{getReadingTime(post.body)} minute read</span>
+          </div>
+        </div>
+      </section>
+      <div class="w-16 h-2 my-2 bg-amber-700"></div>
+      <section id="post-body">
+        <Content />
+      </section>
+    </article>
+    <NewsletterSignUp />
+    <section id="more-articles">
+      <h2 class="text-2xl mb-3">Related posts</h2>
+      <div class="space-y-3">
+        {
+          recommendedArticles.map((recommendedPost) => (
+            <PostRow post={recommendedPost} />
+          ))
+        }
+      </div>
+    </section>
+  </div>
+</Layout>

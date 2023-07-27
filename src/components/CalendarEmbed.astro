@@ -1,0 +1,21 @@
+---
+import { Card } from "./ui/Card";
+---
+
+<div>
+  <h4 class="text-2xl mb-2 text-zinc-50">Wanna chat? Book a call 📅</h4>
+  <Card id="calcom-embed" />
+  <script>
+    Cal("inline", {
+      elementOrSelector: document.getElementById("calcom-embed"), // You can also provide an element directly
+      calLink: "brockherion", // The link that you want to embed. It would open https://cal.com/jane in embed
+      config: {
+        name: "Brock Herion", // Prefill Name
+        email: "brockheriondev@gmail.com", // Prefill Email
+        notes: "", // Prefill Notes
+        guests: [], // Prefill Guests
+        theme: "dark", // "dark" or "light" theme
+      },
+    });
+  </script>
+</div>

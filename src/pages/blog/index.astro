@@ -1,41 +1,36 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
+import PostPreview from "../../components/PostPreview.astro";
 
 let title = "Blog - Brock Herion";
 let description =
   "On my blog, you can browse articles on software development, productivity, books, and my life as a developer.";
 let permalink = "https://brockherion.dev/";
-let image = "/default-social.webp";
+let image = "/brockheriondev.webp";
 
-let allPosts = await Astro.glob("./posts/*.md");
+let allPosts = await getCollection("posts");
 allPosts = allPosts
-  .filter((post) => post.frontmatter.isPublished)
+  .filter((post) => post.data.isPublished && !post.data.isDraft)
   .sort(
     (a, b) =>
-      new Date(b.frontmatter.publishedOn).valueOf() -
-      new Date(a.frontmatter.publishedOn).valueOf()
+      new Date(b.data.publishedOn).valueOf() -
+      new Date(a.data.publishedOn).valueOf()
   );
 ---
 
 <Layout content={{ title, description, permalink, image }}>
   <h1 class="text-3xl pt-6">
     Blog 📰
-    <div class="w-16 h-2 mt-4 bg-emerald-400"></div>
+    <div class="w-16 h-2 mt-4 bg-amber-700"></div>
   </h1>
-  <h3 class="my-4">Viewing {allPosts.length} posts</h3>
+  <h3 class="my-4 text-sm text-zinc-50">Viewing {allPosts.length} posts</h3>
 
   <ul class="space-y-6 m-auto mb-12">
     {
       allPosts.map((post) => (
         <li class="max-w-2xl">
-          <p class="italic text-sm">{post.frontmatter.publishedOn}</p>
-          <a
-            class="text-emerald-400 font-semibold tracking-wide hover:underline text-lg"
-            href={`/blog/posts/${post.frontmatter.slug}`}
-          >
-            {post.frontmatter.title}
-          </a>
-          <p>{post.frontmatter.description}</p>
+          <PostPreview post={post} />
         </li>
       ))
     }

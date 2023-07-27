@@ -1,46 +1,78 @@
 ---
-import FeaturedPosts from "../components/FeaturedPosts.astro";
 import RecentPosts from "../components/RecentPosts.astro";
 import Layout from "../layouts/Layout.astro";
 import NewsletterSignUp from "../components/NewsletterSignUp.astro";
-import code from "/code.webp";
+import { Link } from "../components/ui/Link";
 
 let title = "Home - Brock Herion";
 let description =
   "I'm Brock. I'm a software developer and content creator. On this site, we look at content related to software development and my own journey as a developer";
 let permalink = "https://brockherion.dev/";
-let image = "/default-social.webp";
+let image = "/brockheriondev.webp";
+
+const projects = [
+  {
+    name: "brockherion.dev",
+    description:
+      "My personal website, built with Astro, React, TypeScript, and Tailwind",
+    url: "https://github.com/BrockHerion/brockherion.dev",
+  },
+  {
+    name: "wordle_rs",
+    description: "Wordle clone, written in Rust as a CLI application",
+    url: "https://github.com/BrockHerion/wordle_rs",
+  },
+  {
+    name: "cronthing.com (Coming soon!)",
+    description:
+      "Application for managing background jobs for your serverless applications",
+    url: "#",
+  },
+];
 ---
 
-<Layout content={{ title, description, permalink, image }}>
-  <div class="flex flex-col md:grid md:grid-cols-2 mb-8 space-x-4">
-    <img class="mb-6 w-full" src={code} alt="Picture of Brock" />
-    <div class="flex flex-col md:items-end justify-center">
-      <div class="flex flex-col md:items-end">
-        <h1 class="text-4xl">Hey there 👋</h1>
-        <div class="w-16 h-2 mt-4 bg-emerald-400"></div>
-      </div>
-
-      <h2 class="text-xl mt-6 mb-3 md:text-right">
-        I'm Brock! I'm a software developer, writer, and content creator
-      </h2>
-      <h3 class="text-lg mt-4 mb-3 md:text-right">
-        On this site, you&apos;ll find content related to full-stack software
-        development, productivity, technology, and more! You&apos;ll also get to
-        know me a little better and get to see some of the cool things I&apos;ve
-        worked on.
-      </h3>
+<Layout content={{ title, description, permalink, image }} enableAnimation>
+  <section id="hero">
+    <h1 class="font-bold text-2xl text-zinc-50 mb-4">Hey, I'm Brock 👋</h1>
+    <p class="mb-2 leading-6 max-w-3xl text-sm text-zinc-300">
+      I'm a full-stack software developer, natural optimist, and proud cat dad.
+      I like to read, play video games, and tinker with things. I love web
+      development and am passionate about building great software.
+    </p>
+    <p class="leading-6 mb-2 max-w-3xl text-sm text-zinc-300">
+      I create content for developers, mainly around building things with React,
+      TypeScript, and Next.js. This comes in the form of blog posts, Tweets, and
+      newsletter articles.
+    </p>
+    <p class="text-zinc-300 leading-6 mb-6 max-w-3xl text-sm">
+      Lately, I've been working on an app for running background jobs for your
+      serverless applications, taking a deeper dive into data structures and
+      algorithms, writing blog posts, and hitting the gym for those sweet gains.
+    </p>
+  </section>
+  <section id="recent-posts">
+    <h4 class="text-xl mb-3 text-zinc-200">Blog 📰</h4>
+    <RecentPosts />
+  </section>
+  <section id="newsletter-signup">
+    <h4 class="text-xl mb-2 text-zinc-200">Newsletter 📥</h4>
+    <NewsletterSignUp />
+  </section>
+  <section id="projects">
+    <h4 class="text-xl mb-2 text-zinc-200">Projects 💻</h4>
+    <div class="grid grid-cols-2 gap-4 md:grid-cols-3 mb-6">
+      {
+        projects.map((project) => (
+          <div class="flex flex-col">
+            <div class="mb-1">
+              <Link href={project.url} target="_blank" rel="noreferrer">
+                {project.name}
+              </Link>
+            </div>
+            <span class="text-sm text-zinc-400">{project.description}</span>
+          </div>
+        ))
+      }
     </div>
-  </div>
-  <NewsletterSignUp />
-  <FeaturedPosts />
-  <RecentPosts />
-  <div class="flex justify-center">
-    <a
-      href="/blog"
-      class="bg-yellow-300 px-3 py-4 rounded-md text-gray-800 font-semibold"
-    >
-      Explore more posts
-    </a>
-  </div>
+  </section>
 </Layout>

@@ -1,64 +1,82 @@
 ---
 import { Icon } from "astro-icon";
+import { Link } from "./ui/Link";
+import { motion } from "framer-motion";
+import { navigation } from "../lib/ constants";
+
+type Props = {
+  enableAnimation?: boolean;
+};
+
+const { enableAnimation } = Astro.props;
+const transitionDelay = 0.5;
 ---
 
 <header
-  class="flex-none mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-6 flex flex-col items-center md:justify-between justify-center"
+  class="flex-none mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 bg-stone-800 top-0"
 >
-  <div class="flex flex-col justify-center max-w-4xl mx-auto items-center">
-    <a href="/" class="flex items-center">
-      <span class="text-4xl md:5xl"> Brock Herion</span>
-    </a>
-    <div class="bg-emerald-400 w-12 h-1 md:mb-2 mt-2"></div>
-  </div>
-  <div
-    class="flex justify-between items-center max-w-4xl w-full mx-auto my-6 flex-col-reverse md:flex-row"
-  >
-    <nav>
-      <ul class="flex items-center justify-center space-x-6">
-        <li class="nav-link">
-          <a href="/">Home</a>
-        </li>
-        <li class="nav-link">
-          <a href="/about">About</a>
-        </li>
-        <li class="nav-link">
-          <a href="/blog">Blog</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="flex items-center justify-center space-x-3 mb-4 md:m-0">
-      <a
-        href="https://twitter.com/BrockHerion"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <Icon name="mdi:twitter" />
-      </a>
-      <a href="https://github.com/BrockHerion" rel="noreferrer" target="_blank">
-        <Icon name="mdi:github" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/brock-j-herion-34279a176/"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <Icon name="mdi:linkedin" />
-      </a>
-      <a
-        href="https://www.instagram.com/brock_herion/"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <Icon name="mdi:instagram" />
-      </a>
-      <a
-        href="https://www.facebook.com/brockheriondev"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <Icon name="mdi:facebook" />
-      </a>
-    </div>
+  <div class="max-w-4xl mx-auto">
+    <motion.div
+      client:load
+      initial={enableAnimation ? { opacity: 0, y: -20 } : false}
+      animate={{ opacity: 1, y: 1 }}
+      transition={{ duration: 0.5 }}
+      className="text-zinc-400 text-xs"
+    >
+      Brock Herion
+    </motion.div>
+    <motion.div
+      client:load
+      initial={enableAnimation ? { opacity: 0, y: -20 } : false}
+      animate={{ opacity: 1, y: 1 }}
+      transition={{ duration: 0.5, delay: transitionDelay }}
+      className="flex justify-between items-center w-full mt-2 flex-col-reverse md:flex-row"
+    >
+      <nav>
+        <ul class="flex items-center justify-center space-x-6">
+          {
+            navigation.map((item) => (
+              <li>
+                <Link href={item.href}>{item.name}</Link>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+      <div class="flex items-center justify-center space-x-3 mb-4 md:m-0">
+        <Link
+          href="https://twitter.com/BrockHerion"
+          rel="noreferrer"
+          target="_blank"
+          className="border-none"
+        >
+          <Icon name="fa-brands:twitter" />
+        </Link>
+        <Link
+          href="https://github.com/BrockHerion"
+          rel="noreferrer"
+          target="_blank"
+          className="border-none"
+        >
+          <Icon name="fa-brands:github" />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/brock-j-herion-34279a176/"
+          rel="noreferrer"
+          target="_blank"
+          className="border-none"
+        >
+          <Icon name="fa-brands:linkedin" />
+        </Link>
+        <Link
+          href="https://discordapp.com/users/328018708746338318"
+          rel="noreferrer"
+          target="_blank"
+          className="border-none"
+        >
+          <Icon name="fa-brands:discord" />
+        </Link>
+      </div>
+    </motion.div>
   </div>
 </header>

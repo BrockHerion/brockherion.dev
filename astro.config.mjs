@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import preact from '@astrojs/preact';
 import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
@@ -13,15 +12,17 @@ export default defineConfig({
       external: ['svgo']
     }
   },
-  integrations: [preact(), react(), tailwind({
+  integrations: [react(), tailwind({
     config: {
       applyBaseStyles: false
     }
-  }), mdx(), sitemap()],
+  }), mdx({
+    extendMarkdownConfig: false,
+  }), sitemap()],
 	site: "https://brockherion.dev",
   markdown: {
     shikiConfig: {
-      theme: 'dark-plus'
+      theme: 'github-dark',
     }
   }
 });
