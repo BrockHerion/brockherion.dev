@@ -22,7 +22,7 @@ export default defineConfig({
 	site: "https://brockherion.dev",
   markdown: {
     shikiConfig: {
-      theme: 'github-dark',
+      theme: 'dark-plus',
     }
   }
 });
