@@ -5,6 +5,7 @@ import { getCollection } from "astro:content";
 import PostPreview from "./PostPreview.astro";
 
 const posts = await getCollection("posts");
+
 const recentPosts = posts
   .filter((post) => post.data.isPublished && !post.data.isDraft)
   .sort(
@@ -20,13 +21,16 @@ const recentPosts = posts
     {
       recentPosts.map((post) => (
         <li class="max-w-2xl">
-        <PostPreview post={post} />
+          <PostPreview post={post} />
         </li>
       ))
     }
   </ul>
 
-  <Link href="/blog" className="border-none flex items-center justify-start w-28">
+  <Link
+    href="/blog"
+    className="border-none flex items-center justify-start w-28"
+  >
     <span>All posts</span>
     <Icon class="ml-1" name="radix-icons:arrow-right" />
   </Link>
