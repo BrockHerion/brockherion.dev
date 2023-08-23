@@ -9,7 +9,7 @@ const { title, description, slug, image, keywords } = content;
 const permalink = generatePermalink(slug);
 ---
 
-<html lang={content.lang || "en"}>
+<html lang={content.lang || "en"} class="dark">
   <head>
     <BaseHead {title} {description} {permalink} {image} {keywords} />
   </head>
