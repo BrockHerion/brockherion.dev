@@ -10,7 +10,7 @@ If you haven't heard, Drizzle is the new kid on the block in the world of TypeSc
 
 Jokes aside, Drizzle is a fantastic ORM that packs a lot of powerful features. Combine that with Planetscale and you've got yourself a next-level developer experience.
 
-In this article, we'll be talking a look at how to get started using Drizzle with your Planetscale database.
+In this article, we'll be taking a look at how to get started using Drizzle with your Planetscale database.
 
 ## Getting your Planetscale connection string
 
