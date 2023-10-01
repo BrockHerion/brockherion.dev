@@ -3,14 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-	pre {
-		@apply rounded p-3 my-2 text-sm;
-	}
-
-	p > code {
-		@apply py-1 px-2 bg-neutral-700 shadow-sm dark:shadow-none text-sm rounded;
-	}
-
 	blockquote {
 		@apply relative my-1;
 	}

@@ -3,7 +3,7 @@ import * as React from "react";
 
 const Link = React.forwardRef<
   HTMLAnchorElement,
-  React.HTMLAttributes<HTMLAnchorElement>
+  React.AnchorHTMLAttributes<HTMLAnchorElement>
 >(({ className, ...props }, ref) => (
   <a
     ref={ref}

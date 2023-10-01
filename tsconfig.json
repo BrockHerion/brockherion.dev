@@ -14,7 +14,8 @@
     // Add type definitions for our Vite runtime.
     "types": ["vite/client"],
     "strictNullChecks": true,
-    "allowJs": true
+    "allowJs": true,
+    "verbatimModuleSyntax": false
   },
   "exclude": ["node_modules"]
 }
