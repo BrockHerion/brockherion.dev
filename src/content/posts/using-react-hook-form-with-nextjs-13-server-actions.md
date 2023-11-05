@@ -4,6 +4,7 @@ description: "Here's how to use Drizzle ORM with a Planetscale database"
 isPublished: true
 isFeatured: true
 publishedOn: "October 8, 2023"
+keywords: "nextjs, qstash, messaging queue, serverless, upstash"
 ---
 
 Next.js 13 introduced us to Server Actions. Instead of having to create a new API endpoint, you can just define an asynchronous function that can be called from your components. This means we can leverage libraries like React Hook Form to manage our form state on the client, and use a Server Action to handle submissions.

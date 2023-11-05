@@ -15,10 +15,9 @@ const {
 } = Astro.props;
 ---
 
-<article class="flex justify-between items-center">
-  <Link href={generatePostUrl(slug)}>
+<article class="flex flex-col sm:flex-row-reverse justify-between space-y-1">
+  <span class="text-xs">{publishedOn}</span>
+  <Link href={generatePostUrl(slug)} className="flex-1">
     <span>{title}</span>
   </Link>
-
-  <span class="text-xs">{publishedOn}</span>
 </article>

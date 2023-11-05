@@ -6,14 +6,14 @@ import { navigation } from "../lib/ constants";
 
 <footer class="py-2 my-4 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
   <div class="border-t border-zinc-50 max-w-4xl mx-auto py-2 text-center">
-    <nav class="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
-      {navigation.map((item) => (
-        <div class="pb-6">
-          <Link href={item.href}>
-            {item.name}
-          </Link>
-        </div>
-      ))}
+    <nav class="-mb-6 flex justify-center space-x-12" aria-label="Footer">
+      {
+        navigation.map((item) => (
+          <div class="pb-6">
+            <Link href={item.href}>{item.name}</Link>
+          </div>
+        ))
+      }
     </nav>
     <div class="flex items-center justify-center space-x-10 py-4 md:m-0">
       <Link
