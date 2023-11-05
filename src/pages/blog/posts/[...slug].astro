@@ -2,7 +2,6 @@
 import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
-import { generateImageUrl } from "../../../lib/urls";
 import { getReadingTime } from "../../../lib/readingTime";
 import PostRow from "../../../components/PostRow.astro";
 import { Link } from "../../../components/ui/Link";
@@ -42,7 +41,7 @@ type Props = {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
-const imageUrl = generateImageUrl(post.slug, "webp");
+const imageUrl = "/brockheriondev.webp";
 const recommendedArticles = await getRecommendedArticles(post.slug);
 ---
 
@@ -52,6 +51,7 @@ const recommendedArticles = await getRecommendedArticles(post.slug);
     description: post.data.description,
     image: imageUrl,
     keywords: post.data.keywords,
+    slug: `blog/posts/${post.slug}`,
   }}
 >
   <div>

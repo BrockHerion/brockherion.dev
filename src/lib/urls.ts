@@ -7,10 +7,6 @@ export function generatePermalink(slug: string) {
   return `${baseUrl}/${slug}`;
 }
 
-export function generateImageUrl(slug: string, extension: string) {
-  return `/posts/${slug}.${extension}`;
-}
-
 export function generatePostUrl(slug: string) {
   return `/blog/posts/${slug}`;
 }

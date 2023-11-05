@@ -4,6 +4,7 @@ description: Learn how to use QStash messaging queues with your Next.js applicat
 isPublished: true
 isFeatured: true
 publishedOn: "November 5, 2023"
+keywords: "nextjs, qstash, messaging queue, serverless, upstash"
 ---
 
 QStash is a serverless messaging queue offered by the platform Upstash. According to the Upstash docs,
