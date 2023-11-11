@@ -56,7 +56,7 @@ const recommendedArticles = await getRecommendedArticles(post.slug);
 >
   <div>
     <article
-      class="flex flex-col my-6 tracking-wider prose md:prose-xl md:prose-code:text-sm prose-zinc dark:prose-invert prose-h1:text-2xl prose-h2:text-xl prose-h3:text-base prose-h4:text-sm prose-p:text-sm prose-p:leading-loose prose-a:no-underline mx-auto post"
+      class="flex flex-col my-6 tracking-wider prose md:prose-code:text-sm prose-zinc prose-blockquote:border-amber-700 dark:prose-invert prose-h1:text-2xl prose-h2:text-xl prose-h3:text-base prose-h4:text-sm prose-p:text-sm prose-p:leading-loose prose-a:no-underline mx-auto post"
     >
       <section id="post-header">
         <div class="flex mb-2">
@@ -83,10 +83,23 @@ const recommendedArticles = await getRecommendedArticles(post.slug);
       <section id="post-body">
         <Content />
       </section>
+      <section id="tags">
+        <div class="flex gap-x-2 justify-center">
+          {
+            post.data.keywords
+              ?.split(",")
+              .map((keyword) => (
+                <div class="text-xs px-2 py-1 bg-stone-800 border rounded-full">
+                  #{keyword.trim()}
+                </div>
+              ))
+          }
+        </div>
+      </section>
     </article>
     <NewsletterSignUp />
     <section id="more-articles">
-      <h2 class="text-2xl mb-3">Related posts</h2>
+      <h2 class="text-2xl mb-3">Related posts 📰</h2>
       <div class="space-y-3">
         {
           recommendedArticles.map((recommendedPost) => (

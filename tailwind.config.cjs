@@ -4,6 +4,14 @@ module.exports = {
 	darkMode: ["class"],
   theme: {
     extend: {
+			typography: {
+        DEFAULT: {
+          css: {
+            'blockquote p:first-of-type::before': false,
+            'blockquote p:first-of-type::after': false,
+          },
+        },
+      },
       fontFamily: {
 				'proxima-nova': ['proxima-nova', 'sans-serif'],
 				'ibm-plex-mono': ['IBM Plex Mono', 'monospace']
