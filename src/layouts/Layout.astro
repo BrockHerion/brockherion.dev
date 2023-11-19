@@ -14,12 +14,12 @@ const permalink = generatePermalink(slug);
     <BaseHead {title} {description} {permalink} {image} {keywords} />
   </head>
 
-  <body class="bg-neutral-950 text-zinc-50 font-ibm-plex-mono">
+  <body
+    class="bg-neutral-950 text-zinc-50 font-ibm-plex-mono mx-auto max-w-3xl px-8"
+  >
     <Header enableAnimation={enableAnimation} />
-    <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-4">
-      <div class="max-w-4xl mx-auto">
-        <slot />
-      </div>
+    <main>
+      <slot />
     </main>
     <Footer />
   </body>
