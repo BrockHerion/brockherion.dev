@@ -20,7 +20,8 @@ const {
     href={generatePostUrl(slug)}
     className="flex-1 flex flex-col sm:flex-row-reverse justify-between space-y-1"
   >
-    <span class="text-xs">{publishedOn}</span>
-    <span class="flex-1">{title}</span>
+    <span class="text-xs max-w-[256px] w-full sm:text-right">{publishedOn}</span
+    >
+    <span>{title}</span>
   </Link>
 </article>
