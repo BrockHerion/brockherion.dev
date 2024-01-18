@@ -23,10 +23,7 @@ export async function getRecommendedArticles(slug: string) {
   const filteredPosts = posts
     .filter(
       (post) =>
-        post.slug !== slug &&
-        post.data.isPublished &&
-        !post.data.isDraft &&
-        new Date(post.data.publishedOn).getTime() <= new Date().getTime()
+        post.slug !== slug && post.data.isPublished && !post.data.isDraft
     )
     .sort(
       (a, b) =>
