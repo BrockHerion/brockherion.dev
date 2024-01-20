@@ -84,7 +84,7 @@ const recommendedArticles = await getRecommendedArticles(post.slug);
         <Content />
       </section>
       <section id="tags">
-        <div class="flex gap-x-2 justify-center">
+        <div class="flex gap-x-2 justify-center items-center flex-wrap gap-y-4">
           {
             post.data.keywords
               ?.split(",")
