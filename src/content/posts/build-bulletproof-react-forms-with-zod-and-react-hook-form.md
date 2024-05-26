@@ -1,7 +1,7 @@
 ---
 title: "Build bulletproof React forms with Zod and React Hook Form"
 description: "Using Zod and React Hook Form, you can build robust React forms with ease."
-keywords: "react, typescript, javascript, zod, react hook form"
+keywords: "react, typescript, javascript, zod, reacthookform"
 isPublished: true
 isFeatured: true
 publishedOn: "March 8, 2023"
