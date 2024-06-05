@@ -12,6 +12,11 @@ let image = "/brockheriondev.webp";
 
 const projects = [
   {
+    name: "Queuebase",
+    description: "Background job and queue management for Next.js applications",
+    url: "https://queuebase.com",
+  },
+  {
     name: "brockherion.dev",
     description:
       "My personal website, built with Astro, React, TypeScript, and Tailwind",
@@ -22,23 +27,12 @@ const projects = [
     description: "Wordle clone, written in Rust as a CLI application",
     url: "https://github.com/BrockHerion/wordle_rs",
   },
-  {
-    name: "Queuebase",
-    description:
-      "Background job and queue management for serverless applications",
-    url: "https://queuebase.com",
-  },
-  {
-    name: "Launch List",
-    description: "A developer-centric app for lead generation",
-    url: "https://launchlist.app",
-  },
 ];
 ---
 
 <Layout content={{ title, description, permalink, image }} enableAnimation>
   <section id="hero">
-    <h1 class="font-bold text-2xl text-zinc-50 mb-4">Hey, I'm Brock 👋</h1>
+    <h1 class="font-bold text-2xl text-zinc-50 mb-4">Hey, I'm Brock</h1>
     <p class="mb-2 leading-6 max-w-3xl text-sm text-zinc-300">
       I'm a full-stack software developer, natural optimist, founder, and proud
       cat dad. I like to read, play video games, and tinker with things. I love
@@ -56,16 +50,16 @@ const projects = [
     </p>
   </section>
   <section id="recent-posts">
-    <h4 class="text-xl mb-3 text-zinc-200">Blog 📰</h4>
+    <h4 class="text-xl mb-3 text-zinc-200">Blog</h4>
     <RecentPosts />
   </section>
   <section id="newsletter-signup">
-    <h4 class="text-xl mb-2 text-zinc-200">Newsletter 📥</h4>
+    <h4 class="text-xl text-zinc-200 mb-6">Newsletter</h4>
     <NewsletterSignUp />
   </section>
   <section id="projects">
-    <h4 class="text-xl mb-2 text-zinc-200">Projects 💻</h4>
-    <div class="grid sm:grid-cols-2 gap-4 md:grid-cols-3 mb-6">
+    <h4 class="text-xl mb-2 text-zinc-200">Projects</h4>
+    <div class="flex flex-col mb-6 space-y-6">
       {
         projects.map((project) => (
           <div class="flex flex-col">
