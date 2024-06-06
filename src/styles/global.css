@@ -3,37 +3,39 @@
 @tailwind utilities;
 
 @layer base {
-	blockquote {
-		@apply relative my-1;
-	}
+  blockquote {
+    @apply relative my-1;
+  }
 
-	blockquote > p {
-		@apply pr-2 text-zinc-50;
-	}
+  blockquote > p {
+    @apply pr-2 text-zinc-50;
+  }
 
-	article {
-		@apply text-lg;
-	}
+  article {
+    @apply text-lg;
+  }
 
-	[astro-icon] {
-		@apply w-5 h-5;
-	}
+  [astro-icon] {
+    @apply w-5 h-5;
+  }
 }
 
 @layer components {
-	.post a, ul, ol {
-		@apply text-sm;
-	}
+  .post a,
+  ul,
+  ol {
+    @apply text-sm;
+  }
 
-	.post ul {
-		@apply list-inside list-disc leading-9 pl-2;
-	}
+  .post ul {
+    @apply list-inside list-disc leading-9 pl-2;
+  }
 
-	.post ol {
-		@apply list-decimal list-inside leading-9 pl-2;
-	}
+  .post ol {
+    @apply list-decimal list-inside leading-9 pl-2;
+  }
 
-	.post a {
-		@apply border-b-2 border-transparent hover:border-amber-700 text-zinc-100 text-sm tracking-widest font-bold;
-	}
+  .post a {
+    @apply border-b-2 border-transparent hover:border-purple-heart-700 text-zinc-100 text-sm tracking-widest font-bold;
+  }
 }
