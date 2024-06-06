@@ -56,9 +56,9 @@ If you're interested in contributing, I'd love to hear from you!
 
 Pricing was something I really struggled with when building Queuebase. I wanted to make it as easy as possible for people to get started with the product, while keeping it as cost-effective as possible.
 
-Queuebase offers three pricing tiers: Free, Pro, and Enterprise. The Free tier is free to use, but you'll be limited to a certain number of jobs per month. You are also limited in the number of apps and environments in each app.
+Queuebase offers four pricing tiers: Free, Basic, Pro, and Enterprise. The Free tier is free to use, but you'll be limited to a certain number of jobs per month. You are also limited in the number of apps and environments in each app.
 
-The Pro tier is pay-as-you-go and includes unlimited jobs. There is not cap on runs, members, or number of apps. There is a cap on environments as of now, but that is subject to change. This tier bills at $0.00015 per job run, or $15 per 100,000 runs. It should be more than enough for most use cases.
+The Basic & Pro tier are both monthly subscriptions that include overage charges. There is not cap on daily runs or number of apps. There is a cap on environments and team members in Basic. Basic is $10/month and Pro is $25/month. Each tier have an overage charge of $10 per 10,000 extra runs.
 
 The Enterprise tier is the most expensive and includes unlimited jobs, runs, members, and environments. This tier is setup to handle large-scale use cases. The price will differ from organization to organization and will be tailored to your specific needs.
 
