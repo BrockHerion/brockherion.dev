@@ -4,7 +4,7 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { generatePermalink } from "../lib/urls";
 
-const { content, enableAnimation } = Astro.props;
+const { content } = Astro.props;
 const { title, description, slug, image, keywords } = content;
 const permalink = generatePermalink(slug);
 ---
@@ -25,7 +25,7 @@ const permalink = generatePermalink(slug);
       >
     </div>
     <div class="mx-auto max-w-3xl px-8">
-      <Header enableAnimation={enableAnimation} />
+      <Header />
       <main>
         <slot />
       </main>
