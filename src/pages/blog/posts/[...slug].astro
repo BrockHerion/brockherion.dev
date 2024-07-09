@@ -30,7 +30,7 @@ export async function getRecommendedArticles(slug: string) {
         new Date(b.data.publishedOn).valueOf() -
         new Date(a.data.publishedOn).valueOf()
     )
-    .slice(0, 5);
+    .slice(0, 10);
 
   return filteredPosts;
 }
@@ -99,7 +99,7 @@ const recommendedArticles = await getRecommendedArticles(post.slug);
     </article>
     <NewsletterSignUp />
     <section id="more-articles">
-      <h2 class="text-2xl mb-3">Related posts 📰</h2>
+      <h2 class="text-2xl mb-3">Related posts</h2>
       <div class="space-y-3">
         {
           recommendedArticles.map((recommendedPost) => (
