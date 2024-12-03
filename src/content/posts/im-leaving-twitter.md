@@ -27,25 +27,25 @@ Twitter in the pre-Musk days wasn't perfect by any means, but it was the best pl
 
 The first thing I noticed was posts were not having nearly as much engagement as I had been getting. I would maybe get a couple of views, but the likes, comments, and retweets were not as high. I also noticed a significant drop in posts from accounts I was trying to engage with. It wasn't that they we're posting however, it was the the algorithm was simply not showing me their content.
 
-My timeline, instead, became a dump for random things I had no interest in seeing. Random videos and memes, low-quality engagement-bait posts, ads for things I didn't care about, and more. That careful curated timeline I had spent months building was gone seemingly out of nowhere. The high-quality developer content I was used to seeing and interacting with was slowly disappearing, replaced with a engagement-bait and low-quality content.
+My timeline, instead, became a dump for random things I had no interest in seeing. Random videos and memes, low-quality engagement-bait posts, ads for things I didn't care about, and more. That careful curated timeline I had spent months building was gone seemingly out of nowhere. The high-quality developer content I was used to seeing and interacting with was slowly disappearing, replaced with engagement-bait and low-quality content.
 
 Given the drops on both sides, I started to post less and less. Sure, I would still share learnings, tech stuff, blog posts, and YouTube videos, but it really wasn't doing anything to drive growth on the platform. Even posting and engaging in groups was not helping. Sure the interactions would be slightly higher and lead to some growth, but it wasn't even close to the pre-Musk growth I was seeing. Blocking accounts and muting keywords didn't seem to help either, as posts I was actively avoiding were still creeping through.
 
-It is also very hard to grow as a new account. During this time, I was creating new accounts for projects I was working on. The goal was people could follow these project accounts and see new updates, fixes, and announcements. Growing with these accounts was next to impossible. With a polluted timeline, it was hard to find new people to follow or people who would be interested in what I was building.
+It is also very hard to grow as a new account. During this time, I was creating new accounts for projects I was working on. The goal was people could follow these project accounts and see new updates, fixes, and announcements. With a polluted timeline, it was hard to find new people to follow or people who would be interested in what I was building. Growing with these accounts was next to impossible.
 
 ## The Decision to Leave
 
-As time went on, the problem would only get worse. Accounts that were following me were bots that would simply un-follow the next day. More and more I started getting DM's from people who were trying to sell my a product or service. My timeline was filled with things I didn't care about, nor interacting with. I stopped caring about growth on Twitter and started looking into growing this blog and my YouTube channel instead. There didn't seem like a point in trying to grow Twitter anymore.
+As time went on, the problem would only get worse. Accounts that were following me were bots that would simply un-follow the next day. More and more I started getting DM's from people who were trying to sell me a product or service. My timeline was filled with things I didn't care about, nor did I want to be interacting with. I stopped caring about growth on Twitter and started looking into growing this blog and my YouTube channel instead. There didn't seem like a point in trying to grow Twitter anymore.
 
 That said, I would still do my best to engage with other accounts. But with good posts becoming fewer and further between and the "quality" of responses severely deteriorating, I was done. What was once a place for me to build, connect, learn, and grow is now a shell of it's former self. It's turned into a vile, hateful, toxic place that I did not want to be a part of. Musk took a platform that I once love and drove it into the ground. Between increased toxicity, a constantly changing algorithm, the bots, and spam posts, I made the choice to leave Twitter.
 
-I deleted Twitter off my phone about almost two weeks ago and debated on where to go next.
+I deleted Twitter off my phone about almost two weeks ago.
 
 ## What's Next?
 
 My first thought was to get on Threads, but after spending some time on there it just didn't feel right. The closest thing I could describe it to is "If Instagram was Twitter", which is own little world of awful.
 
-Soon after I discovered Bluesky and immediately felt at home. After posting for about two weeks now, I can say I feel much better on here than Twitter. I'm still learning the algorithm, but at least I can post and engage with people I want to. I'm back to seeing posts I want to see from people that I have learned so much from.
+Soon after I discovered Bluesky and immediately felt at home. After posting for about two weeks now, I can say I feel much better on there than Twitter. I'm still learning the algorithm, but at least I can post and engage with people I want to. I'm back to seeing posts I want to see from people that I have learned so much from.
 
 The approach I'm taking to posting is post more genuinely, and less of a more engagement bait style posts you'd find on Twitter. Sure, I'll share articles, videos, and other software dev related content, but I also want to share more of my own thoughts and opinions in other ares of my life. I picked up karate and golf this year, both of which I'm having a great time with. I'm finding my passions for reading gaming again, so I want to share my thoughts and feelings things in that area as well. I'm going to be as true to myself on here as a possibly can and see what happens.
 
