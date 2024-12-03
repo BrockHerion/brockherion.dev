@@ -4,8 +4,8 @@ import { getCollection } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import { getReadingTime } from "../../../lib/readingTime";
 import PostRow from "../../../components/PostRow.astro";
-import { Link } from "../../../components/ui/Link";
-import Icon from "astro-icon";
+import Link from "../../../components/ui/Link.astro";
+import { Icon } from "astro-icon/components";
 import NewsletterSignUp from "../../../components/NewsletterSignUp.astro";
 
 export async function getStaticPaths() {

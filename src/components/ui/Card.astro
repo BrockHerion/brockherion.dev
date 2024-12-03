@@ -1,0 +1,7 @@
+---
+const { id = "", className } = Astro.props;
+---
+
+<div id={id} class={`"border-y border-zinc-50 overflow-hidden py-4", ${className}`}>
+	<slot />
+</div>

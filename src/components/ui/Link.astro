@@ -1,0 +1,8 @@
+---
+const { className, href, rel, target } = Astro.props;
+---
+
+<a class={`border-b-2 border-transparent hover:border-indigo-700 text-zinc-300 hover:text-zinc-50 text-sm ${className}`} href={href} rel={rel} target={target}>
+	<slot />
+</a>
+

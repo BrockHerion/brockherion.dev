@@ -1,6 +1,6 @@
 ---
-import { Icon } from "astro-icon";
-import { Link } from "./ui/Link";
+import { Icon } from 'astro-icon/components'
+import Link from "./ui/Link.astro";
 import { navigation } from "../lib/ constants";
 ---
 
@@ -25,44 +25,52 @@ import { navigation } from "../lib/ constants";
               target="_blank"
               href="https://brocksbytes.com"
             >
-              Newsletter
+              {"Newsletter"}
             </Link>
           </li>
         </ul>
       </nav>
       <div class="flex items-center justify-center space-x-3 mb-4 md:m-0">
-        <Link
-          href="https://twitter.com/BrockHerion"
-          rel="noreferrer"
-          target="_blank"
-          className="border-none"
-        >
-          <Icon name="ri:twitter-fill" />
-        </Link>
-        <Link
-          href="https://github.com/BrockHerion"
-          rel="noreferrer"
-          target="_blank"
-          className="border-none"
-        >
-          <Icon name="ri:github-fill" />
-        </Link>
-        <Link
-          href="https://www.youtube.com/@brockherion1275"
-          rel="noreferrer"
-          target="_blank"
-          className="border-none"
-        >
-          <Icon name="ri:youtube-fill" />
-        </Link>
-        <Link
-          href="https://discordapp.com/users/328018708746338318"
-          rel="noreferrer"
-          target="_blank"
-          className="border-none"
-        >
-          <Icon name="ri:discord-fill" />
-        </Link>
+	  <Link
+        href="https://bsky.app/profile/brockherion.bsky.social"
+        rel="noreferrer"
+        target="_blank"
+        className="border-none"
+      >
+        <Icon name="ri:bluesky-fill" class="h-5 w-5" />
+      </Link>
+      <Link
+        href="https://twitter.com/BrockHerion"
+        rel="noreferrer"
+        target="_blank"
+        className="border-none"
+      >
+        <Icon name="ri:twitter-fill" class="h-5 w-5" />
+      </Link>
+      <Link
+        href="https://github.com/BrockHerion"
+        rel="noreferrer"
+        target="_blank"
+        className="border-none"
+      >
+        <Icon name="ri:github-fill" class="h-5 w-5" />
+      </Link>
+      <Link
+        href="https://www.youtube.com/@brockherion1275"
+        rel="noreferrer"
+        target="_blank"
+        className="border-none"
+      >
+        <Icon name="ri:youtube-fill" class="h-5 w-5" />
+      </Link>
+      <Link
+        href="https://discordapp.com/users/328018708746338318"
+        rel="noreferrer"
+        target="_blank"
+        className="border-none"
+      >
+        <Icon name="ri:discord-fill" class="h-5 w-5" />
+      </Link>
       </div>
     </div>
   </div>
